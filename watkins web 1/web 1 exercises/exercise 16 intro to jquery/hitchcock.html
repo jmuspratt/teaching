@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+<title>Exercise 16: Hitchcock</title>
+<link rel="stylesheet" type="text/CSS" href="exercise16.css" media="screen" />
+
+<!-- jquery library -->
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+
+<!-- custom jquery code  -->
+<script type="text/javascript">
+$(function() {
+	$('#trigger').click(function() {
+	  $('.film').toggleClass('reveal');
+	});
+});
+
+
+
+</script>
+
+
+</script>
+
+
+</head>
+
+<body id="hitchcock">
+
+<div id="wrap">
+
+<ul id="nav">
+<li><a href="index.html">Home</a></li>
+<li class="current"><a href="hitchcock.html">Hitchcock</a></li>
+<li><a href="shulman.html">Shulman</a></li>
+</ul>
+
+<div id="main">
+	
+	<h2>Guess which films Hitchock made in American, and which in England.</h2>
+	
+	<p><a href="#" id="trigger">Show/hide the answers</a></p>
+	
+
+	<div class="film usa"><img alt="Dial M for Murder" src="images/dial-m.jpg" />
+			<p>Dial M for Murder</p></div>
+	<div class="film uk"><img alt="The Lady Vanishes" src="images/ladyvanishes.jpg" />
+			<p>The Lady Vanishes</p></div>
+	<div class="film uk"><img alt="The 39 Steps" src="images/39steps.jpg" />
+			<p>The 39 Steps</p></div>
+	<div class="film usa"><img alt="Spellbound" src="images/spellbound.jpg" />
+			<p>Spellbound</p></div>
+	<div class="film usa"><img alt="Rebecca" src="images/rebecca.jpg" />
+			<p>Rebecca</p></div>
+	<div class="film usa"><img alt="Notorious" src="images/notorious.jpg" />
+			<p>Notorious</p></div>
+
+	
+
+</div> <!-- end main -->
+
+</div> <!-- end wrap -->
+
+
+
+
+
+</body>
+</html>

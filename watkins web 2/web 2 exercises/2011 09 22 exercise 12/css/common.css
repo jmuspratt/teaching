@@ -1,0 +1,50 @@
+
+/* ------------------------
+	Type Styles
+ ------------------------ */
+
+body  {
+	font-family:georgia, serif;
+	font-size:14px;
+	line-height:21px;
+	background-color:#eaeaea; /* light gray*/
+	}
+
+
+p {margin-bottom:10px;}
+
+.caps {font-size:90%; letter-spacing:1px;}
+
+h1, h2, h3, h4 {
+	font-weight:normal; /* unbold headings */
+	clear:both;
+	}
+
+h1 {
+	margin:0 0 10px 0;
+	font-size:24px;
+	}
+
+h2 {
+	font-size:13px;
+	text-transform:uppercase;
+	letter-spacing:1px; 
+	margin:20px 0 0 0;
+	}
+
+h3 {
+	margin:20px 0 0 0;
+	}
+
+h4 {
+	font-size:14px;
+	}
+ul, ol {margin:10px 0;}
+
+ul {list-style:circle;}
+
+code {
+	background-color:#FFFBE0; /* 'highlight' code samples */
+	font-family:monospace;
+	}
+	

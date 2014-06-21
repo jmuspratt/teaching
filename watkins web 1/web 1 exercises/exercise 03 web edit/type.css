@@ -1,0 +1,113 @@
+/* set some general type styles */
+
+body {
+
+	}
+
+p, ul, table  {
+
+	}
+	
+
+h1 {
+
+	}
+	
+h2 {
+
+	}
+	
+h3 {
+
+	}
+	
+h4 {
+
+	}
+
+
+
+/* this h1 is at the top: 
+   "Waktins Web 1 Course Blog" */
+
+h1#logo {
+
+	}
+
+	
+/* TYPOGRAPHY WITHIN EACH POST */ 
+
+
+/* post author and date */
+.post h4 {
+color:green;
+	}
+
+/* post title */
+.post h3 {
+
+	}
+
+/* the post title h3 always contains a 'permlink' */
+.post h3 a {
+
+	}
+
+/* paragraphs inside each post */
+
+.post p {
+
+	}
+
+/* hyperlinks inside each post */
+.post a {
+
+		}
+
+/* unordered and ordered lists inside each post */
+.post ul {
+
+	}
+
+.post ol {
+
+	}
+
+
+/* tables inside each post */
+
+.post table {
+
+	}
+
+/* table rows */
+.post tr {
+
+	}
+
+/* table header cells */
+.post th {
+
+	}
+/* table cells themselves (td means 'table data') */
+
+.post td {
+
+	}
+	
+
+/* images inside each post */
+	
+.post img
+
+
+
+
+
+/* the copyright and administrative links */
+
+div#footer p {
+	}
+	
+div#footer a {
+	}

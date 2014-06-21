@@ -1,0 +1,21 @@
+/*	reset */
+	body, body * 	{margin:0; padding:0; text-indent:0; text-decoration: none; outline:none; }
+
+/*	guide */
+	body {background: transparent url(guide.jpg) repeat-y 50% 0; }
+
+/*	basic type styles*/
+	body 	{font-family:"Helvetica Neue", helvetica, arial; font-size:14px; line-height:20px;}
+	a 	{color:#00a8ff;font-weight:bold;}
+	nav ul {list-style:none;}
+	li.current a {color:gray;}
+	h1 {font-size:30px; line-height:30px;  margin-bottom:20px;}
+	h2 {font-size:14px; border-top:1px dotted gray; padding-top:10px; clear:both;}
+	p, ul	{margin-bottom:10px;}
+	footer {clear:both; font-size:11px; border-top:1px solid #eaeaea; padding-top:10px;}
+	
+	
+/*	Put your styles below here */
+
+	
+

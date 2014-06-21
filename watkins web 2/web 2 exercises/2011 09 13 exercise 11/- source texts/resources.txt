@@ -1,0 +1,29 @@
+resources text
+-------------
+
+[logo and nav]
+
+Resources
+
+HTML Email Templates
+MailChimp API
+MailChimp Research
+Academy Videos
+Experts
+
+
+MailChimp Guides
+
+
+Email Marketing Field Guide
+Getting Started With MailChimp
+MailChimp Mobile
+How to Manage Your List
+How To Select An Email Marketing Agency
+Spam Lawsuits
+Understanding Reports
+Email Security
+
+
+
+[footer]

@@ -1,0 +1,83 @@
+/* Reset the browser defaults on everything */
+body * {margin:0; padding:0; border:none;text-indent:0;text-decoration: none;outline:none;}
+
+
+/* maybe set a background color here? */ 
+body {
+	max-width:800px;
+	margin-left: 50px;
+	margin-top: 50px;
+	padding: 1em;
+	background-color: lightgray;
+	
+	}
+	
+
+h1 {
+	margin-left: 50px;
+	
+	}
+
+/* the top div is inside body but also contains 
+   all of the page content. it's really there so you can 
+   size and/or position the whole page as a block */
+
+div#top {
+	max-width:800px;
+	padding: 1em;
+	
+	}
+
+
+
+/* nav contains the tags along with links to home and the archive 
+ you can size and position it, but leave most of the styles to the nav team*/
+ 
+ul#nav {
+
+	margin-left: 50px;
+	padding: 20px;
+	line-height: 25px;
+
+	}
+
+
+
+
+/* search-form contains the search form and the 'search button'  */
+div#search-form {
+
+	border: 2px;
+	padding: 20px;
+	margin-left: 40px;
+	}
+	 
+	
+/* the content div contains all the post divs */
+div#content {
+
+	
+	
+
+	}
+	
+
+/* each of these divs contains an individual post
+(name, date, post title, content) */
+div.post {
+	
+	margin-bottom: 30px;
+	padding: 50px;
+	border-bottom: 2px solid black;
+	margin-left: 20px;
+
+	}
+	
+	
+	
+/* the div at the bottom of the page 
+   it is NOT contained by the content div */
+	
+div#footer {
+
+}

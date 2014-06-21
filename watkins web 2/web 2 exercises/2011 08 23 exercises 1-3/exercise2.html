@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+<title>Exercise 2</title>
+<link rel="stylesheet" type="text/CSS" href="common.css" media="screen" />
+<link rel="stylesheet" type="text/CSS" href="exercise2.css" media="screen" />
+</head>
+
+<body>
+
+<ul id="nav">
+<li><a href="exercise1.html">Exercise 1: Selectors</a></li>
+<li class="current"><a href="exercise2.html">Exercise 2: Basic Box Model</a></li>
+<li><a href="exercise3.html">Exercise 3: Advanced Box Model </a></li>
+</ul>
+
+
+<div id="wrap">
+
+<div id="main">
+
+<h1>Basic Box Model</h1>
+
+<p class="instructions">Make the following changes to the text below using Dreamweaver. <em>You may only edit the CSS.</em></p>
+
+<ol>
+<li>The images below are 300 px wide and 300 px high. Write a rule that adds a 5px dashed gray border to both of them.</li>
+<li>Write a rule that just applies to the first image: add a red background color and 5px of padding to reveal that background.</li>
+<li>Add a left margin of 20px to the second image to separate the two images.</li>
+<li>The two images and their attributes are now taking up the full width of the <code>main</code> div. Now add 5px of padding to the <em>second</em> image. Since this pushes the second image to the next line, reduce its left margin by the <em>minimum</em> amount necessary to bring it back up to the same line as the first image.</li>
+<li>Remember that the box model does <em>not</em>prohibit elements from being larger than their containers &#8212; that&#8217;s just a default. The paragraph below is nested inside <code>div id="container1"</code>. Set a width on #container1 that is much larger than 650px.</li>
+<li>Images behave differently: the big Watkins type is a 900px-wide image, nested inside a paragraph and <code>div id="container2"</code>. Try setting <code>overflow:hidden;</code> on <code>container2</code> to see the image get clipped. Now try <code>overflow:scroll;</code>.</li>
+</ol>
+
+<h2>Some Images</h2>
+	
+<p><img id="image1" src="images/watkins.jpg" alt="Dial W for Watkins" /><img id="image2"src="images/watkins.jpg" alt="Dial W for Watkins" /></p>
+
+
+<div id="container1">
+
+<p>This paragraph sits inside <code>div id="container1"</code>. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</div> <!-- end container1 -->
+
+
+<div id="container2">
+
+<p><img id="image3" src="images/watkins-type.png" alt="Watkins" /></p>
+
+</div> <!-- end container2 -->
+
+
+<p id="footer">&#169; Watkins College of Art and Design.</p>
+
+</div> <!-- end main -->
+
+</div> <!-- end wrap -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* ------------------------
+ Reset
+ ------------------------*/
+	body, body * 	{margin:0; padding:0; text-indent:0; text-decoration: none; outline:none; font-weight:normal;}
+	body img		{border:0;}
+
+/* ------------------------
+	Useful classes
+ ------------------------ */
+ .clear 	{clear:both;}
+ .cf:after	{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+
+ /* ------------------------
+	Main Layout Styles
+ ------------------------ */
+
+body  { font-family:georgia, serif; padding:5px; font-size:14px; line-height:21px; background-color:#eaeaea; /* light gray*/ }
+	
+header {width: 900px; margin:0 auto; padding:30px 5% 20px 5%; background-color: white; border-bottom:1px dotted #ddd;}
+	
+
+#main {	max-width: 900px; margin:0 auto 20px auto; padding:20px 5% 50px 5%; background-color: white; }
+	
+
+/* ------------------------
+	Type Styles
+ ------------------------ */
+
+a 		{color:#0675a4; /*blue*/ }
+a:hover {color:#2ec0fe;}
+
+h1, h2, h3 {
+	font-weight:normal; /* unbold headings */
+	clear:both;
+	}
+
+h1 			{margin:0 0 10px 0; font-size:24px;}
+h2 			{font-size:16px; margin:20px 0 5px 0; color:#ca6a3b; /*orange*/}
+h3 			{font-size:14px; color:#999; margin:10px 0 0 0;}
+
+strong {font-weight:bold;}
+
+
+#main p, #main ul, #main ol {margin-bottom:10px;}
+#main ul {list-style:circle;}
+
+#main p.important {border:1px solid red; padding:5px;}
+
+section { border-bottom:3px solid #eaeaea; margin-bottom:10px; padding-bottom:10px;}
+
+article {margin:20px 0; padding:20px; border:1px dotted gray;}
+
+/* ------------------------
+	Nav
+ ------------------------ */
+  
+nav					{width:100%; padding-bottom:10px; float:left; width:60%;}
+
+nav ul 				{list-style:none;}
+nav li				{display:inline; margin-right:2%;}
+nav a				{padding:5px; border:0; display:inline-block;}
+nav a:hover			{color:#333;}
+nav li.current a 	{color:black;}
+
+
+/* ------------------------
+	Footer
+ ------------------------ */
+
+footer {clear:both;margin-top:100px; padding:10px 0; border-top:1px solid #eaeaea; }
+
+
+	

@@ -1,0 +1,21 @@
+/* Part 1 */
+#paragraph1, #paragraph2 {border:1px dotted gray; padding:5px;}
+#paragraph2 strong       {border:1px solid red;margin:0 -20px 0 20px;}
+.special                 {display:block; color:green; margin-left:-50px;}
+
+
+/* Part 2 */
+.formgroup        {background-color:#eaeaea; padding:10px 20px 20px 20px; margin-bottom:10px;}
+input             {display:block;}
+input#search-text {padding:5px 10px; margin-bottom:10px; width:200px; font-size:28px;}
+textarea          {border:1px dotted gray; padding:5px;}
+
+#textarea1:focus  {font-size:24px;}
+#textarea2        {background:#fff url(images/blue-fade.png) repeat-x 0 0;}
+
+/* Part 3 */
+.gallery			{list-style:none; }
+.gallery li			{display:inline}
+.gallery li img		{background-color:#c3ffcb; padding:20px;}
+.gallery li.odd img {background-color:#c3ebff; padding:20px 40px 20px 40px;}
+

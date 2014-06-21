@@ -1,0 +1,37 @@
+home text
+-------------
+
+
+[logo and nav]
+
+
+Easy Email Newsletters
+
+MailChimp helps you design email newsletters, share them on social networks, integrate with services you already use, and track your results. It's like your own personal publishing platform.
+
+Sign Up Free
+
+
+What's New
+
+New Feature: 
+More Templates!
+We just added a boatload of beautiful templates to MailChimp, and they're free for everyone.
+Learn More
+
+Customer Story: 
+Raleigh Denim
+Learn More
+
+What's so special about handcrafted blue jeans? We visited the Raleigh Denim workshop to find out.
+App Spotlight: 
+Unfurlr
+Unfurlr shows you the destination of shortened URLs before you click, so you can avoid phishing attacks and other nefarious links.
+Learn More
+
+App Spotlight: 
+Golden Monkeys
+Every mailing list has some VIPs. Golden Monkeys helps you keep track of them on your iPhone and Android devices.
+
+
+[footer]

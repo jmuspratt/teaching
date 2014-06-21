@@ -1,0 +1,152 @@
+	/* ------------------------
+	Reset the browser defaults
+	*/
+body, body * {margin:0; padding:0; text-indent:0; text-decoration:none; outline:none;}
+
+
+	/* ------------------------
+	Modular grid system
+	*/
+	
+.w1  {width: 60px;}  /* 1 column */
+.w2  {width: 140px;} /* 2 columns + 1 gutters */
+.w3  {width: 220px;} /* 3 columns + 2 gutters */
+.w4  {width: 300px;} /* 4 columns + 3 gutters */
+.w5  {width: 380px;} /* 5 columns + 4 gutters */
+.w6  {width: 460px;} /* 6 columns + 5 gutters */
+.w7  {width: 540px;} /* 7 columns + 6 gutters */
+.w8  {width: 620px;} /* 8 columns + 7 gutters */
+.w9  {width: 700px;} /* 9 columns + 8 gutters */
+.w10 {width: 780px;} /* 10 columns + 9 gutters */
+.w11 {width: 860px;} /* 11 columns + 10 gutters */
+.w12 {width: 940px;} /* 12 columns + 11 gutters */
+
+	/* ------------------------
+	I ♥ Floats
+	*/
+
+.left  {float: left;}
+.right {float:right;}
+.clear {clear:both;}
+
+
+	/* ------------------------
+	Grid guide
+	*/
+	
+body {
+	background:#f0eed2 url(grid.png) repeat-y center 0;
+}
+
+	/* ------------------------
+	Main Styles
+	*/
+
+body {
+	background-color:#f0eed2;
+	font-family: helvetica, "Helvetica Neue", arial, sans-serif;
+	font-size:13px;
+	line-height:20px;
+	}
+
+
+/* centered, fixed-width layout */
+
+#wrap {
+	width: 940px;
+	margin: 0 auto;
+	}
+
+/* links */
+
+a {
+	font-weight:bold; 
+	color:black;
+	}
+a:hover {
+	font-weight:bold; color:#788731;
+	}
+
+/* masthead includes nav and h1#company */
+
+#masthead {margin-top:20px; height: 120px;}
+
+/* logo */
+h1#company {font-size:28px;}
+
+/* nav */
+#nav {list-style:none;}
+#nav li {float:left; margin-right:20px;}
+#nav li:last-child {margin-right:0;}
+#nav li a {border-bottom:1px solid black; display:block; padding-bottom:3px;}
+#nav li a:hover {border-color:#788731;}
+#nav li.current a {color:#df8921; border-color:#df8921;}
+
+
+/* intro-text */
+#intro-text p {
+	color:#788731; 
+	font-weight:bold;
+	font-size:28px;
+	line-height:40px;
+	margin-top:-10px;
+	}
+
+
+/* intro-pitch */
+
+#intro-pitch img {display:block; margin-bottom:20px;}
+
+.buy-button {
+	text-transform:uppercase;
+	text-align:center;
+	display:block;
+	padding-top:15px;
+	margin:20px 0 0 -3px;
+	width:150px;
+	height:50px;
+	background:transparent url(button.png) no-repeat 0 0;
+	}
+.buy-button:hover {
+	color:white;
+	}
+	
+	
+/* news */
+
+#news {
+	list-style:none;
+	}
+#news li {
+	background-color:#e6e4c1;
+	height:100px;
+	margin-bottom:20px;
+	
+	}
+#news li span {
+	padding:10px;
+	font-size:11px; line-height:15px;
+	}
+
+
+
+	/* ------------------------
+	About Page Styles
+	*/
+
+.blurb {margin-right:20px; margin-top:-10px;}
+.blurb:last-child {margin-right:0;}
+
+.blurb h2 {text-transform:uppercase;font-size:20px; line-height:40px; height:125px;}
+
+
+	/* ------------------------
+	Footer
+	*/
+
+#footer  {
+	margin-top:20px;
+	border-top:1px solid black;
+	}
+#footer p {margin-right:20px; padding-top:5px;}
+#footer p:last-child {margin-right:0;}

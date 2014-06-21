@@ -1,0 +1,136 @@
+/* Reset the browser defaults on everything */
+body * {margin:0; padding:0; border:none;text-indent:0;text-decoration: none;outline:none;}
+
+
+
+
+/* set some general type styles */
+
+body {
+width:50em;
+margin: 40px 40px 40px 40px;
+
+	}
+
+p, ul, table  {
+
+	}
+	
+
+h1 {
+	
+	}
+	
+h2 {
+
+	}
+	
+h3 {
+
+	}
+	
+h4 {
+
+	}
+
+
+
+/* this h1 is at the top: 
+   "Waktins Web 1 Course Blog" */
+
+h1#logo {
+	font-family: Georgia, serif;
+	font-size:40px;
+	color:green;
+	margin:20px 30px 20px 30px;
+
+	}
+
+	
+/* TYPOGRAPHY WITHIN EACH POST */ 
+
+
+/* post author and date */
+.post h4 {
+	font-family: Baskerville, "sans-serif";
+	font-size:20px;
+	margin-bottom:10px;
+
+	}
+
+/* post title */
+.post h3 {
+font-family:"Times New Roman", serif;
+font-size:30px;
+margin-bottom:4px;
+	}
+
+/* the post title h3 always contains a 'permlink' */
+.post h3 a {
+
+	}
+
+/* paragraphs inside each post */
+
+.post p {
+font-family:"sans-serif";
+margin-bottom:20px;
+text-indent:0px;
+
+
+	}
+
+/* hyperlinks inside each post */
+.post a {
+
+
+		}
+
+/* unordered and ordered lists inside each post */
+.post ul {
+
+	}
+
+.post ol {
+
+	}
+
+
+/* tables inside each post */
+
+.post table {
+
+	}
+
+/* table rows */
+.post tr {
+
+	}
+
+/* table header cells */
+.post th {
+
+	}
+/* table cells themselves (td means 'table data') */
+
+.post td {
+line-height:20px;
+padding:10px 0 0 20px;
+	}
+	
+
+/* images inside each post */
+	
+.post img
+
+
+
+
+
+/* the copyright and administrative links */
+
+div#footer p {
+	}
+	
+div#footer a {
+	}

@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+<title>Exercise 5</title>
+<link rel="stylesheet" type="text/CSS" href="common.css" media="screen" />
+<link rel="stylesheet" type="text/CSS" href="exercise5.css" media="screen" />
+</head>
+
+<body>
+
+<ul id="nav">
+<li><a href="exercise4.html">Exercise 4: Floats</a></li>
+<li class="current"><a href="exercise5.html">Exercise 5: Positioning</a></li>
+<li><a href="exercise6.html">Exercise 6: Advanced Layout </a></li>
+</ul>
+
+
+<div id="wrap">
+
+<div id="main">
+
+<h1>Positioning</h1>
+
+
+
+<ul id="sub-nav">
+<li><a href="#part1">Part 1</a></li>
+<li><a href="#part2">Part 2</a></li>
+<li><a href="#part3">Part 3</a></li>
+</ul>
+
+<div id="part1" class="section">
+
+<h2>Part 1</h2>
+<p>In the previous exercise, we used floats to put elements side by side. In certain situations, relative- and absolute-positioning.</p>
+<ol>
+<li>The first thing we do is define the "origin point" for our absolutely-positioned elements. Since <code>.section</code> is our primary content <code>div</code>, target <code>.section</code> and set it to <code>position:relative;</code>. Now positioned-elements inside <code>.section</code>s will, by default, start in their upper-left corner.</li>
+<li>First lets make a place for our sub-navigation: add a statement to your <code>.section</code> rule that adds a fairly large left margin (150px).</li>
+<li>The in-page navigation (<code>ul#sub-nav</code>) is marked up an unordered list with same-page anchor-links in it. Start the rule by removing the bullets, then set it to <code>position:absolute;</code>. The sub-nav should get pulled out of the document flow and land in the space you made for it.</li>
+</ol>
+
+
+</div> <!-- end part1 -->
+
+
+<div id="part2" class="section">
+
+<h2>Part 2</h2>
+<ol>
+<li>Using the logic from Part 1, target the image below and position it out in the left-column. Remember that <code>position:absolute;</code> can take <code>top</code> and <code>left</code>values.</li>
+</ol>
+
+<p><img src="images/nashville.jpg" height="80" width="100" alt="Nashville" /> Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <strong>dolore deserunt mollit anim</strong>reprehenderit in  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia  sunt in culpa qui officia deserunt mollit anim id est laborum. In reprehenderit in voluptate velit esse cillum  id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+</div> <!-- end part2 -->
+
+
+
+
+<div id="part3" class="section">
+
+<h2>Part 3</h2>
+<ol>
+<li><code>position:fixed;</code> is different and simpler than <code>postion:absolute;</code>: elements will be pulled out of the document flow and be positioned according to the browser window, now matter what elements they are nested in. Use <code>position:fixed;</code> to target the footer on this page and attach to the bottom left corner of the browser. Add a background color and use a fixed width to ensure the type is legible.</li>
+</ol>
+
+
+</div> <!-- end part3 -->
+
+
+
+<p id="footer">&#169; Watkins College of Art and Design.</p>
+
+</div> <!-- end main -->
+
+</div> <!-- end wrap -->
+
+
+
+</body>
+</html>

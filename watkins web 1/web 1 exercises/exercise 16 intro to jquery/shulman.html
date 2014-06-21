@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+<title>Exercise 16: shulman</title>
+<link rel="stylesheet" type="text/CSS" href="exercise16.css" media="screen" />
+
+
+
+<!-- jquery library -->
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+
+<!-- cycle, a jquery plugin (must be loaded *after* jquery) -->
+<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
+
+<!-- custom cycle code  -->
+
+<script type="text/javascript">
+$(function() {
+	$('#main').cycle({ 
+	    speed:  '100', 
+	    prev:".prev",
+	    next:".next",    
+	    timeout: 0
+	    });
+});
+</script>
+
+</head>
+
+<body id="shulman">
+
+<div id="wrap">
+
+<ul id="nav">
+<li><a href="index.html">Home</a></li>
+<li><a href="hitchcock.html">Hitchcock</a></li>
+<li class="current"><a href="shulman.html">Shulman</a></li>
+</ul>
+
+
+	<ul id="slide-nav">
+	<li><a class="prev" href="#">Previous</li>
+	<li><a class="next" href="#">Next</a></li>
+	</ul>
+
+<div id="main">
+	
+
+	<div class="slide">
+		<img src="images/julius-shulman-arhcitectural-photographer.jpg" alt="Chuey House" /></a>
+	<p>Julius Shulman</p>
+	</div> <!-- end slide -->
+	
+	<div class="slide">
+		<img src="images/case-study-house-22-1960.jpg" alt="Case Study House #22" />
+		<p>Julius Shulman's photo of Case Study House #22 includes people. Design by architect Pierre Koenig. Image &#169; J. Paul Getty Trust, Julius Shulman Photography Archive</p>
+	</div> <!-- end slide -->
+
+	<div class="slide">
+	<img src="images/kaufman residence-neutra-1947.jpg" alt="Chuey House" />
+	<p>Kaufman Residence, Designed by Richard Neutra. 1947.</p>
+	</div> <!-- end slide -->
+
+	<div class="slide">
+	<img src="images/chuey-house-los-angeles-1958-julius-shulman-771186.jpg" alt="Chuey House" />
+	<p>Chuey House, 1958</p>
+	</div> <!-- end slide -->
+
+</div> <!-- end main -->
+
+</div> <!-- end wrap -->
+
+
+
+
+
+</body>
+</html>

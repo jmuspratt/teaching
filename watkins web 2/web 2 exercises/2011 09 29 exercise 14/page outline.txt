@@ -1,0 +1,15 @@
+body
+	div#container
+		div#main
+			div#header-and-about
+				header
+					h1
+					h2
+					nav
+				section#about
+			div#exhibits
+				section#architects
+				section#standard
+				section#picasso
+				section#german
+		footer

@@ -1,0 +1,16 @@
+ @import url("basics.css");
+#set-style2 {font-weight:bold; border-bottom:2px solid white;}
+
+
+/* ------------------
+ Your styles go below  */
+
+
+
+img {max-width:100%;}
+
+#primary, #secondary, #tertiary {float:left; width:250px; margin-right:25px;}
+#tertiary {margin-right:0;}
+
+.group {margin-bottom:15px;}
+.group p, .group ul

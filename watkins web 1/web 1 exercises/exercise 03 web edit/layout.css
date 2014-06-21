@@ -1,0 +1,53 @@
+/* maybe set a background color here? */ 
+body {
+
+	background-color:gray;
+	}
+	
+	
+
+/* the top div is inside body but also contains 
+   all of the page content. it's really there so you can 
+   size and/or position the whole page as a block */
+
+div#top {
+
+	}
+
+
+
+/* nav contains the tags along with links to home and the archive 
+ you can size and position it, but leave most of the styles to the nav team*/
+ 
+ul#nav {
+
+	}
+
+
+
+
+/* search-form contains the search form and the 'search button'  */
+div#search-form {
+
+	} 
+	
+/* the content div contains all the post divs */
+div#content {
+
+	}
+	
+
+/* each of these divs contains an individual post
+(name, date, post title, content) */
+div.post {
+
+	}
+	
+	
+	
+/* the div at the bottom of the page 
+   it is NOT contained by the content div */
+	
+div#footer {
+
+}

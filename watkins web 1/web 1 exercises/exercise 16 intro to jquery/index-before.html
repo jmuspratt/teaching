@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+<title>Exercise 16: Home</title>
+<link rel="stylesheet" type="text/CSS" href="exercise16.css" media="screen" />
+
+<!-- jquery library -->
+<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+
+<!-- custom jquery code  -->
+<script type="text/javascript">
+
+
+// This funciton shows and hide the #diller div when 
+// clicking the #trigger-diller link 
+$(function() {
+	$('#trigger-diller').click(function() {
+	  $('#diller').toggle('slow', function() {});
+	});
+});
+
+
+
+// Write a function that shows and hides the 
+// #foster div when clicking the #trigger-foster link 
+
+
+
+</script>
+
+
+</head>
+
+<body id="arch">
+
+<div id="wrap">
+
+<ul id="nav">
+<li class="current"><a href="index.html">Home</a></li>
+<li><a href="hitchcock.html">Hitchcock</a></li>
+<li><a href="shulman.html">Shulman</a></li>
+</ul>
+
+<div id="main">
+	
+	<ul id="triggers">
+		<li><a href="#" id="trigger-diller">Blur Building</a></li>
+		<li><a href="#" id="trigger-foster">British Museum</a></li>
+	</ul>
+
+	
+	<div id="diller">
+	<p><img src="images/blur-building.jpg" alt="Blur Building" /></p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+	<p>The blur building, by <a href="http://www.dsrny.com/">Diller Scofidio + Renfro</a>.</p>
+	</div> <!-- end diller -->
+
+
+
+
+	<div id="foster">
+	<p><img src="images/british-museum.jpg" alt="British Museum" /></p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
+	<p>The British Museum Great Court, by <a href="http://www.fosterandpartners.com">Foster + Partners</a>.</p>
+	</div> <!-- end diller -->
+
+
+
+</div> <!-- end main -->
+
+</div> <!-- end wrap -->
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+/* ------------------------
+	Reset the browser defaults
+ ------------------------ */
+body, body * {margin:0; padding:0; text-indent:0; text-decoration:none; outline:none;}
+
+
+/* ------------------------
+	Layout
+ ------------------------ */
+
+body {
+	font-family:helvetica, arial, sans-serif;
+	font-size:13px;
+	}
+
+a, a:link {color:#45bcd2;}
+
+
+
+#masthead-wrap {background-color:#45bcd2;}
+
+#main-wrap {background:gray url(noisepattern.png) repeat 0 0px;}
+
+#footer-wrap {background-color:#000}
+
+
+
+
+#masthead, #main, #footer {
+	width:990px;
+	margin:0 auto;
+	padding:200px 0;
+	}
+	
+
+#items {list-style:none;}
+
+#items li {float:left;}
+	
+#items li a {display:block; width:100px; height:200px; background-color:gray; margin: 0 20px 20px 0;}
+
+
+
+.clear {clear:both;}
+	
+	
+	
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+	
+
+
+
+
+
+
+#main {background-color:#f0f0f0; border-top-left-radius:20px; border-top-right-radius:20px; padding-top:10px;}
+
+
+#footer {clear:both; color:#fff;}

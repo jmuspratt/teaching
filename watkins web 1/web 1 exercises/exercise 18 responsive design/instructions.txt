@@ -1,0 +1,97 @@
+--------------------
+PART 1:
+--------------------
+
+Take the fixed layout and convert it entirely to a flexible layout, i.e. one that expands and contracts depending on the browser window. This will require converting the various containers from absolute (pixel) units to percentages.
+
+Remember that when you declare a value as a percentage in CSS, it is *always* relative to its container. In other words, if you've written #outerdiv {width:1200px;} and #innerdiv {width:50%};, then #innerdiv will be rendered as 600px wide in the browser.
+
+First, change find the width declaration for #wrap and change it to max-width:1200px;
+
+Then, using the outline below as a scratchpad, change all widths and *horizontal* margins/paddings to percentages. Vertical measurements (heights, top and bottom margins and padding, etc), can be left in pixels.
+
+
+body
+
+     #wrap (width = 1200px)
+     
+        #main 
+        [content]      
+        /main 
+     
+        #side
+     
+              #bio
+               [content]    
+              /bio
+     
+              #further
+              [content]
+              /further
+     
+         /side
+      
+     /wrap
+
+/body
+
+
+
+--------------------
+PART 2: 
+--------------------
+You now have a flexible layout that adapts to the width of a browser. Even so, it becomes hard to read at the skinnier dimensions. We'll fix this with media queries.
+
+
+-----
+A
+-----
+Beginning with #wrap, put all of your css into this media query. 
+This applies your rules only when the browser is over 801px wide.
+
+[ global styles are up here ]
+
+/*Begin 3-column layout*/
+@media screen and (min-width: 801px) {
+
+	[ all the main except for the global styles goes here ]
+
+} /*end three-column layout */
+
+
+-----
+B
+-----
+
+Now tack an additional media query to the end of your stylesheet. 
+This applies a different set of rules when the browser is between 600px and 800px wide.
+
+
+/* Begin medium, two-column layout */
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+	a {color:#407f90;} /*blue*/
+	#wrap {padding:20px; }
+	#main {width:65%; float:left;}
+	#side {width:30%; float:right;}	
+	#main, #side {border-top:10px solid #407f90;}
+} 
+/* end two-column layout*/
+
+
+-----
+C
+-----
+
+Now put in one final media query at the end of your stylesheet. 
+This applies your rules another set of rules when the browser is 
+between less than 600px wide: iphones, for example.
+
+/* Begin single-column layout */
+
+@media screen and (max-width: 600px) {
+	a {color:#604090;} /*purple*/
+	#wrap {padding:10px;}
+	#main, #side {border-top:10px solid #604090;}
+} 
+/* End single-column layout*/

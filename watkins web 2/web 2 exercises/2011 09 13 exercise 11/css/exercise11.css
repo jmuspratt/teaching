@@ -1,0 +1,360 @@
+/* ------------------------
+	Reset the browser defaults
+ ------------------------ */
+body, body * {margin:0; padding:0; text-indent:0; text-decoration:none; outline:none; border:0;}
+
+
+
+/* ------------------------
+	Special classes to clear floats with
+ ------------------------ */
+.clear {clear:both;}
+
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+ 
+
+
+/* ------------------------
+	Basics
+ ------------------------ */
+
+body {
+	font-family:helvetica, arial, sans-serif;
+	font-size:13px;
+	}
+
+a {color:#45bcd2;} /* blue */
+
+a:hover {color:#68e7ff;} /* lighter blue */
+
+
+/* ------------------------
+	Layout
+ ------------------------ */
+
+
+/* All three wrappers should expand to the browser width */
+#masthead-wrap, #main-wrap, #footer-wrap {
+	width:100%;
+	}
+
+/* All three inner container divs should be fixed-width and centered within their wrapper containers */
+
+#masthead, #main, #footer {
+	width:990px;
+	margin:0 auto;
+	}
+
+/* ------------------------
+	Background Colors and Images
+ ------------------------ */
+
+
+#masthead-wrap {
+	background-color:#45bcd2;
+	border-bottom:1px solid #3796a8;
+	}
+	
+#main-wrap {
+	background:gray url(noisepattern.png) repeat 0 0;
+	border-top:1px solid white;
+	}
+
+#footer-wrap {
+	background-color:#191814
+	}
+
+
+/* ------------------------
+	Pull #main div up, round corners, add shadow 
+ ------------------------ */
+#main {
+	width: 930px;
+	clear:both;
+	margin-top:-50px;
+	padding:10px 30px 0 30px; 
+	background-color:#f0f0f0; 
+	border-top-left-radius:10px; 
+	border-top-right-radius:10px; 
+	box-shadow: 0 0 8px #888;
+	}
+
+
+/* Logo-nav is a div containing h1#logo, p#signup, and ul#nav */
+
+#logo-nav {
+	float:left; 
+	margin-top:50px; 
+	width:990px;
+	}
+
+/* Replace the logo text with a background image,
+float it left */
+
+h1#logo {
+	width:220px; 
+	height:60px;
+	float:left; 
+	text-indent:-999px; 
+	background: transparent url(main_logo.png) no-repeat 0 0;
+	}
+
+p#signup a {
+	background-color:#3f3f38; 
+	display:block;
+	float:left;
+	width:100px;
+	border-radius:5px;
+	text-align:center;
+	margin-right:5px; 
+	color:#fff;
+	padding:15px 10px;
+	}
+p#signup a:hover {
+	background-color:#7a7a7a; 
+	}
+
+/* ------------------------
+	Nav
+ ------------------------ */
+
+#nav {
+	list-style:none; 
+	float:right; 
+	margin-top:15px;
+	width: 600px; 
+	height:100px;
+	}
+	
+#nav li {
+	float:left;
+	}
+
+#nav a {
+	color:#42423b; 
+	font-weight:bold; 
+	padding:15px 10px; 
+	background-color:rgba(234,234,234, .9); 
+	border-left:1px solid #fff;
+	border-right:1px solid #bbd6db;
+	}
+
+#nav a:hover {color:black;}
+
+#nav li:first-child a {
+	border-top-left-radius:5px;
+	border-bottom-left-radius:5px;
+	border-left:0;
+	}
+
+
+
+
+/* ------------------------
+	Search
+ ------------------------ */
+
+#search-form {
+	background-color:rgba(234,234,234, .95); 
+	border-bottom-right-radius:8px;
+	border-top-right-radius:8px;
+	display:block;
+	float:left;
+	height:21px;
+	margin-top:-15px;
+	padding:12px;
+	}
+	
+#search-field {
+	height:12px; 
+	padding:5px;
+	border-top-left-radius:8px;
+	border-bottom-left-radius:8px;
+	color:#a9a9a9;
+	float:left;
+	font-size:13px;
+	}
+
+#search-submit {
+	text-indent:-9999px; 
+	width:20px;
+	height:22px; 
+	background:#fff url(search.png) no-repeat 50% 4px; 
+	border-top-right-radius:8px;
+	border-bottom-right-radius:8px;
+	border:0;
+	padding:5px;
+	display:block;
+	float:right;
+	}
+	
+	
+	
+/* Monkey is a background image, attached to the bottom of masthead */
+
+#masthead {
+	background:transparent url(easy-email-newsletters-banner-png8.png) no-repeat 0 bottom;
+	padding-bottom:100px;
+	}
+
+
+/* ------------------------
+	Intro is a div containing an h2, a paragraph, and "sign up free"
+ ------------------------ */
+#intro {
+	margin-left:450px; 
+	padding-top:50px; 
+	width:470px;
+	}
+
+#intro h2 {
+	background:transparent url(easy-email-newsletters-text.png) no-repeat 0 100px; 
+	text-indent:-9999px; 
+	height:260px;
+	}
+
+#intro p {
+	color:#006577; 
+	font-size:14px;
+	line-height:18px; 
+	margin-bottom:30px;
+	}
+
+a.signupbutton {
+	background-color:#e95c41; 
+	padding:15px 40px; 
+	clear:both;
+	color:#fff; 
+	font-size:15px; 
+	margin-top:20px;
+	border-radius:5px;
+	}
+
+a.signupbutton:hover {
+		background-color:#ff755b; 
+
+	}
+
+
+/* What's New */
+
+#main h2 {
+	font-size:28px;
+	margin-top:10px;
+	color:#3f3f38;
+	}
+
+ul#whatsnew {list-style:none;}
+
+ul#whatsnew li {
+	float:left; 
+	padding:10px 0 0 0; 
+	width:210px;
+	margin-right:30px;
+	}
+ul#whatsnew li:last-child {
+	margin-right:0;
+	}
+
+ul#whatsnew a img {
+	border-top: 1px solid #b7b7b5;
+	border-bottom:1px solid #fff;
+	}
+
+ul#whatsnew h4 {
+	color:#3f3f38;
+	font-size:14px;
+	margin-top:15px;
+	}
+ul#whatsnew h5 {
+	color:#3f3f38;
+	font-size:21px;
+	margin-bottom:20px;
+	}
+		
+ul#whatsnew p {	
+	color:#7f807c;
+	line-height:15px;
+	margin-bottom:20px;
+	height:80px;
+	}
+	
+/* "Learn more" button links */
+
+ul#whatsnew p a {
+	display:block;
+	background:#3f3f38 url(arrows.png) no-repeat 95% 7px;
+	border:1px solid #292925;
+	border-radius:5px; 
+	color:#fff;
+	padding:5px 8px;
+	}
+
+ul#whatsnew p a:hover {
+	color:#eaeaea; /* light gray */
+
+	}
+	
+
+
+
+/* Footer */
+
+#footer {
+	clear:both; 
+	padding:50px 0 100px 0;
+	}
+#footer ul {
+	list-style:none;
+	}
+#footer > ul {
+	margin-left:30px;
+	list-style:none;
+	}
+#footer li {
+	margin-bottom:5px;
+	}
+#footer ul li.col {
+	float:left; 
+	width:210px;
+	margin-right:30px;
+	}
+	
+/* First item in the list */
+#footer li.col a {
+	display:block;
+	font-weight:bold;
+	color:#fff;
+	margin-bottom:5px;
+	}
+#footer li.col a:hover {
+	color:#999; /* light gray */
+	}		
+
+
+/* Secondary links in the list */
+#footer li.col li a {
+	font-weight:normal;
+	color:#777875;	
+	}
+#footer li.col li a:hover {
+	font-weight:normal;
+	color:white; 	
+	}	
+	
+
+
+/* Copyright */
+#footer p {
+	color:#777875;
+	clear:both;
+	text-align:center;
+	margin-top:10px;
+	}

@@ -1,0 +1,121 @@
+/* main navigation */
+
+body * {margin:0; padding:0; border:none;text-indent:0;text-decoration: none;outline:none;}
+
+
+ul#nav {
+
+	padding:auto;
+	text-align:center;
+	text-transform: uppercase;
+	font-family:"Charcoal CY";
+	background:black;
+	margin:auto;
+	word-spacing:40px;
+	
+	}
+
+ul#nav li {
+
+ display: inline;
+
+	}
+
+a:link {color:white}
+
+a:active {color:gray}
+
+a:visited {color:red;}
+
+a:hover {color:blue;}
+
+ul#nav li a {
+
+
+	} 
+
+/* the current class is dynamically added to a list item
+   if we're on the corresponding page. in other words, if 
+   you click on 'exercises,' the navigation html will be the same except
+   <li><a href="http://web1.jamesmuspratt.com/tags/slides/">Slides</a></li>
+   will change to 
+   <li class="current"><a href="http://web1.jamesmuspratt.com/tags/slides/">Slides</a></li>
+   */
+   
+ul#nav li.current a {
+	
+	
+	} 
+
+
+/* when you're in a post page, there's
+ a "previous next" navigation too */
+
+ul#prev-next {
+
+	}
+
+/* the list items */
+ul#prev-next li  {
+
+	}
+
+/* the links inside the list items */
+
+ul#prev-next li a {
+
+	}
+
+
+
+/* post-tags is a paragraph of text and links 
+   coming at the end of (but inside) each post div */
+
+p.post-tags {
+
+padding:auto;
+	text-align:center;
+	text-transform: uppercase;
+	font-family:"Charcoal CY";
+	background:black;
+	margin:auto;
+
+	}
+
+p.post-tags a {
+
+    padding:auto;
+	font-size:
+	text-align:center;
+	text-transform: uppercase;
+	font-family:"Charcoal CY";
+	background:black;
+	margin:auto;
+
+	} 
+
+
+
+/* when you're on the home page, there's
+   an "older/newer" navigation too */
+
+ul#section-nav {
+
+
+	}	
+	
+ul#section-nav li.older {
+
+	}
+
+ul#section-nav li.newer {
+
+	}
+
+ul#section-nav li.older a {
+
+	}
+
+ul#section-nav li.newer a {
+
+	}

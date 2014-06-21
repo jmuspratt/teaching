@@ -1,0 +1,44 @@
+/* ------------------------
+	Reset the browser defaults
+ ------------------------ */
+* {margin:0; padding:0; text-indent:0; text-decoration:none; outline:none;}
+
+
+/* ------------------------
+	Layout
+ ------------------------ */
+
+body  		{font-family:georgia, serif; font-size:14px; line-height:21px; background-color:#eaeaea; }
+#main 		{width: 800px; margin:0 auto; padding:10px 50px; background-color: white;}
+footer		{clear:both; padding-top:10px; }
+
+
+/* ------------------------
+	Type Styles
+ ------------------------ */
+
+a 			{color:#0675a4; /*blue*/ }
+a:hover 	{color:#2ec0fe;}
+
+h1, h2, h3, h4 { font-weight:normal;}
+h1 {margin:0 0 10px 0; font-size:24px;}
+h2 {font-size:12px; text-transform:uppercase; letter-spacing:1px; margin:0 0 2px 0;}
+h3 {font-size:13px; font-weight:bold; margin-top:20px;}
+h4 {font-size:13px; font-style:italic;}
+
+p {margin-bottom:10px;}
+strong {color:#0eb51e;}
+
+code {
+	background-color:#FFFBE0; /* 'highlight' code samples */
+	font-family:monospace;
+	}
+
+#content ul {padding-left:20px;}
+/* ------------------------
+	Tools
+ ------------------------ */
+.clear 				{clear:both;}
+.clearfix:after 	{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+form {background:#eaeaea; padding:10px;margin:10px 0 20px 0;}

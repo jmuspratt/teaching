@@ -1,0 +1,67 @@
+/*Zero browser defaults*/
+body * {margin:0; padding:0; border:none; text-indent:0; text-decoration:none; outline:none;}
+
+
+/* ------------------------
+	Basic Styles 
+ ------------------------ */
+
+body  {
+	font-family:georgia;
+	font-size:15px;
+	line-height:21px;
+	background-color:#e7e7e7; /* light gray*/
+	}
+
+h1, h2, h3, p {
+	font-weight:normal;
+	margin-bottom:10px;
+	}
+
+a 				{color:#00b4ff; /*blue*/}
+li.current a	{color:black;}
+
+
+
+/* ------------------------
+	Layout 
+ ------------------------ */
+
+
+h3 {
+	margin:20px 0 10px 0;
+	}
+
+div#wrap {
+	width: 750px;
+	margin:20px auto;
+	background-color: #fff; /* white */
+	}
+
+div#main {
+	float:left;  /* this is called 'floating the container' */
+	padding:40px;
+	background-color: #fffee6; /*light yellow*/
+	}
+
+
+ul.gallery {
+	list-style:none;
+	margin-bottom:20px;
+	}
+
+ul.gallery li {
+	float:left;
+	}
+	
+	
+ul#first li img {
+	margin:0 5px 0 0;
+	border:2px dotted black;
+	}
+
+
+ul#second li img {
+	margin:0 5px 0 0;
+	border:2px solid black;
+	}

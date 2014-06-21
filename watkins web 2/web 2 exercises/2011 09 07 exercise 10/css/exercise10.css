@@ -1,0 +1,112 @@
+/* ------------------------
+ General Styles
+ ------------------------ */
+
+
+a 	{color:#0675a4; /*blue*/ }
+
+
+/* ------------------------
+ Part 1: Expading/Collapsing Boxes
+ ------------------------ */
+h3.toggle-trigger {
+
+/*	display:block;*/
+	}
+
+h3.toggle-trigger:hover {
+	background-color:#1197cf; /* light blue */
+	}
+	
+h3.toggle-trigger.active a {
+	background-color:orange;
+	}
+
+h3.toggle-trigger a {
+	display:block;	
+	color:#fff;
+	background:#0675a4;
+	padding:8px;
+	margin-top:10px;	}
+
+.toggle-content {
+	border:1px solid #eaeaea;
+	border-top:0;
+	padding:10px;
+	margin-bottom:20px;
+	}
+	
+h3.toggle-trigger {margin-bottom:0;}
+
+
+/* ------------------------
+ Part 2: In-Page Tabs
+ ------------------------ */
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px;
+	border-bottom: 1px solid #eaeaea;
+	border-left: 1px solid #eaeaea;
+	width: 100%;
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 31px;
+	line-height: 31px;
+	border: 1px solid #eaeaea;
+	border-left: none;
+	margin-bottom: -1px;
+	background: #e0e0e0;
+	overflow: hidden;
+	position: relative;
+}
+ul.tabs li a {
+	text-decoration: none;
+	display: block;
+	padding: 0 40px;
+}
+ul.tabs li a:hover {
+	background: #ccc;
+	}	
+html ul.tabs li.active, html ul.tabs li.active a:hover  {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+}
+
+#tabs-container {
+	border: 1px solid #eaeaea;
+	border-top: none;
+	clear: both;
+	float: left; 
+	width: 100%;
+
+}
+
+.tab-content {
+	padding: 20px;
+}
+
+
+
+/* ------------------------
+Part 3: Lightbox
+ ------------------------ */
+
+
+/* hide lightbox*/
+
+.lightbox {
+	display:none; 
+	padding:20px;
+	background-color:#fff;
+	font-size:13px;
+	color:#6a0202;
+	}
+
+.gallery {list-style:none;}
+.gallery a  {display:block; float:left; margin-right:10px;}

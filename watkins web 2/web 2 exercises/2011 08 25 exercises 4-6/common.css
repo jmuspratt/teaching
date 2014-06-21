@@ -1,0 +1,71 @@
+/* ------------------------
+	Reset the browser defaults
+ ------------------------ */
+body * {margin:0; padding:0; text-indent:0; text-decoration:none; outline:none;}
+
+
+/* ------------------------
+	Layout
+ ------------------------ */
+
+body  {
+	font-family:georgia, serif;
+	font-size:14px;
+	line-height:21px;
+	background-color:#eaeaea; /* light gray*/
+	}
+
+
+div#wrap {
+	width: 750px;
+	margin:20px auto; /* put 20px margin above/below and center horizontally */
+	}
+
+div#main {
+	padding:50px;
+	background-color: white; 
+	}
+
+.section {margin-bottom:80px;}
+
+/* ------------------------
+	Type Styles
+ ------------------------ */
+
+
+p, ol, ul {margin: 0 0 10px 0;}
+
+ol li, ul li {
+	margin-bottom:3px;
+	}
+
+ol ul {margin-left:50px;}
+
+li.current a	{
+	color:black; /* distinguish the active navigation item */
+	} 
+
+h1, h2, h3 {
+	font-weight:normal; /* unbold headings */
+	}
+
+h1 {
+	margin:0 0 10px 0;
+	font-size:24px;
+	}
+
+h2 {
+	font-size:13px;
+	text-transform:uppercase;
+	letter-spacing:1px; 
+	margin:20px 0 0 0;
+	}
+	
+a 	{
+	color:#0675a4; /*blue*/
+	}
+
+code {
+	background-color:#FFFBE0; /* 'highlight' code samples */
+	font-family:monospace;
+	}

@@ -1,0 +1,299 @@
+
+/* ------------------------
+ Part 1: CSS Sprites
+
+Sprites are a technique for taking a bunch of icons, baking them into a single image, and using CSS to display a different part of that image for each. The advantages are convenience of updates (all your icons are in one place) and faster loading times: the server only has to download and cache a single image instead of four or five. 
+
+Our process goes like this:
+1. Apply our sprite image to all the links in the navigation list.
+2. Set padding to move our type off the background image.
+3. Set a different background-position for each navigation link to expose the correct icon for each one.  
+
+ ------------------------ */
+
+
+/* Remove bullets from the list */
+ul#sprites {list-style:none;float:left;}
+
+/* Target the links in the list.
+- Apply icons.png as a background image.
+- Make the link targets fill their available space with display:block; 
+- Use padding to push the text off the background image and align it vertically with the icons */
+ul#sprites a {
+	padding:4px 0 0 20px;
+	display:block;
+	background-image: url(icons.png);
+	background-repeat:no-repeat;	
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+	}
+
+/* Now write four rule for each navigation link. You'll want to use the IDs that have been put on the parent list items. Set a different background position for each. By targeting the *links* in each list item, you'll be building on the general rule you wrote above. Hint: the icons are offset vertically by 50px from each other, but they're not in the order of the HTML code. */
+#n-home a    {background-position: 0 -42px;} 
+#n-docs a    {background-position: 0 -92px;}
+#n-charts a  {background-position: 0 -142px;}
+#n-password a {background-position: 0 8px;}
+
+/* Finally, write a rule that indents your navigation text by 5px on hover (use text-indent or padding */
+#sprites a:hover {
+	text-indent:5px;
+	}
+
+
+/* Bonus round: CSS3 transitions 
+Go back to your (non-hover) general rule for the links and add the following code. Then test our the hover effect.
+
+-webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease;
+
+*/
+
+
+
+
+/* ------------------------
+Part 2: Sliding Doors
+
+The "sliding doors" technique lets us create a navigation button graphic that can expand and contract based on the length or size of the text inside it. This lets us apply it across many navigation items without having to create a custom image for each navigation link. In fact, we won't set a width or height on anything in this section. 
+
+Take a look at tab-left.png and tab-right.png: the two images will sit side-by-side to form our button, with the excess part of the graphic getting cropped where it isn't needed. We'll use the brown tab-left-temp.png as a guide (to see where the seam is) and then swap it out for the blue one at the end.
+
+ ------------------------ */
+
+
+/* Target the #sliding unordered list and remove bullets */
+ul#sliding {list-style:none;}
+
+/* Let's make this a horizontal navigation. Target the list items in the list and float them left. */
+ul#sliding li {float:left; } 
+
+/* Target the actual navigation *links* and do the following:
+- add a right-margin of 10px.
+- Add left padding of 20px.
+- Change the font to centered, light-blue (#6ad4ff), 11px bold uppercase Arial. 
+- Make the whole link clickable with display:block;
+- Set the background tab-left-temp.png as a background image with a position of left top. Make sure to stop it from repeating (either horizontally or vertically).
+*/
+
+ul#sliding a {
+	margin-right:10px;	
+	padding:0 0 0 20px;
+	font-size:11px; 
+	text-transform:uppercase; 
+	font-family:arial;
+	font-weight:bold; 
+	color:#6ad4ff; 
+	text-align:center;
+	display:block; 
+	background:transparent url(tab-left.png) no-repeat left top;  
+	}
+
+/* Now we want to add tab-right.png as a background image in the top *right* of the link. But since many browsers don't recognize multiple background images on a single element (that's part of CSS3), we'll add it to the <span> that's nested inside each of the links:
+
+Target the *spans* inside the navigation links and do the following:
+- Add right-padding of 20px as well as a little top padding)
+- center-align the text,
+- use display:block to make the span fill the same area as the link that contains it. 
+- apply tab-right.png as a background image with a position of right top. 
+*/
+ul#sliding a span {
+	padding:7px 20px 0 0; 
+	display:block;
+	background:transparent url(tab-right.png) no-repeat right top;
+	-webkit-transition: all .3s ease;
+	-moz-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+/* If everything is aligning, go back two rules and change "tab-left-temp.png" to "tab-left.png". Try setting your browser to View > "Zoom text only" and see how many zoom levels the navigation can take before it breaks. */
+
+
+/* Let's make the tab pop up on hover. First create a rule that that targets the span when we hover over its parent navigation link. Hint: "a:hover" is the usual way to create a hover rule for links, but this time we want to deal specifically with the span 
+nested inside the link. Use your rule for the spans above for spans as a model.
+*/
+
+ul#sliding a:hover span {
+	color:#fff; 
+	padding-bottom:20px;
+	margin-top:-20px;
+	}
+
+
+/* Bonus round: CSS3 transitions 
+Go back to your (non-hover) rule for the nested span and add the following code. Then test our the hover effect.
+
+-webkit-transition: all .3s ease;
+-moz-transition: all .3s ease;
+-o-transition: all .3s ease;
+transition: all .3s ease;
+
+*/
+
+
+
+
+
+
+
+
+
+/* ------------------------
+Part 3: Dropdowns
+
+First, take a look at the markup for the dropdowns list in the HTML. Notice that HTML gives us a way of describing sub-levels within a hierarchy of lists: we just start a new list before closing a list item tag. As long as you keep track of your opening and closing tags, you can have infinite sub-levels of lists.
+
+This structure is perfect for dropdowns: first of all, the structure of the links is being marked up semantically, so the hierarchical relationship will be maintained if the stylesheet doesn't load, the nav appears in an RSS feed, a search engine spiders it, etc. Second, we can use descendent selectors in combination with hover rules to build a dropdown/flyout system with no javascript required. Take that, Dreamweaver.
+
+ ------------------------ */
+
+/* Target the main #dropdowns list as well as its descendent <ul>'s, then remove bullets.*/
+ul#dropdowns, ul#dropdowns ul {list-style:none;}
+
+
+/* Target list items inside #dropdown:
+- set them to 120px wide
+- float them left
+- set them to position:relative (this way we can position any child sub-lists according to the parent's position) */
+ul#dropdowns li {
+	width:120px; 
+	float:left; 
+	position:relative;
+	}
+
+/* Target the links inside the list items
+- set a background color of #eaeaea
+- add 5px of margin on the right 
+- add 5px padding all around */
+
+ul#dropdowns li a {
+	background:#eaeaea; 
+	display:block; 
+	margin-right:5px;
+	padding:5px;
+	}
+
+/* Let's add a small arrow to the list items that have sublists:
+- Target the links inside li.drop using the *Child selector* (see below). This way our rule doesn't keep inheriting down the hierarchy: it stops with the immediate child of the parent. Think of it as a more-refined version of the descendent selector (which just uses a space). 
+- add arrow-down.png as a background image and position it 90% over and 10px down. */
+ul#dropdowns li.drop > a {
+	background:#eaeaea url(arrow-down.png) no-repeat 90% 10px;
+	}
+
+/* Match your rule above but add :hover to change the down-arrow sprite to its bright blue state on hover. You'll want to pull the image up 50px */
+ul#dropdowns li.drop > a:hover {
+	background-position:90% -40px;
+	}
+
+
+/* Let's change the background color of the links inside the dropdowns. Here we can just use descendent selectors. 
+- Target just the links that are nested inside list items which themselves are nested in the "drop" list items. In other words, target the links that will appear in the dropdown. 
+- Set a background-color of #6b6b6b
+- Change the text color to #fff
+- Add a bottom-border of 1px solid #888
+*/	
+ul#dropdowns li.drop li a {
+	background-color:#6b6b6b;
+	color:#fff;
+	border-bottom:1px solid #888;
+	}
+	
+/* Let's make a hover effect for these links: Match the rule above but add ":hover" to the selector and change the background color to #9b9b9b.  */	
+ul#dropdowns li.drop ul li a:hover {
+	background-color:#9b9b9b;
+	}
+
+
+
+/*  Now it gets interesting. Target lists that are children of "drop" list items. Then  set them to "position:absolute" so that they overlap the content below instead of pushing it down. When everything looks right, add display:none to your rule to hide the dropdowns. 
+*/
+ul#dropdowns li.drop > ul {
+	display:none;
+	position:absolute;
+	}
+
+/* The logic of a dropdown is that the "trigger" for the dropdown is a hover on a particular list item, and the thing that needs to appear is that list item's child sub-list. Match your above rule but add the :hover pseudoclass on the "drop" list items. Use display:block to reveal the dropdowns. */
+
+ul#dropdowns li.drop:hover > ul {
+	display:block;
+	}
+
+
+/* FLYOUTS */
+
+
+/* We'll make our sub-sub-list "fly out" to the side of its parent.*/
+
+
+/* Target child links of list items that have the "flyout" class. Then add the arrow-right.png image as a background. Once again, put it 90% over and 10px down from its origin point. You may want to spell out all your backgorund properties (background-image, background-repeat, background-position) -- that way you can let the background-color get inherited from your earlier general rule. */
+ul#dropdowns li.drop li.flyout > a {
+	background-image: url(arrow-right.png);
+	background-repeat:no-repeat;
+	background-position: 90% 10px
+	}
+
+/* Match your rule above and add :hover. Pull the background image up 50px to reveal the white sprite in arrow-right.png */
+ul#dropdowns li.drop li.flyout > a:hover {
+	background-position:90% -40px;
+	}
+
+/* Target lists that appear in "flyout" list items. 
+- Set them to position:absolute;
+- let a left value of 115px; 
+- if everything looks right, add display:none; to hide them
+
+/* Hide the flyouts */
+ul#dropdowns li.drop li.flyout ul {
+	display:none; 
+	position:absolute;
+	left:115px;
+	}
+
+/* Create the hover rule: Match your selector above but add :hover on the "flout" list items and apply display:block; */
+/* Show the flyouts on hover */
+ul#dropdowns li.drop li.flyout:hover ul {
+	display:block;
+	}
+
+
+
+/* BONUS ROUND: Corner-rounding with CSS3 
+Uncomment the following code, step-by step */
+
+/* Lets make tabs: Round all the top-left and top-right corners on our navigation links by 5px */
+
+ul#dropdowns li a {
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	}
+
+/* Override 1: If the link is inside a dropdown, unround its corners */
+
+ul#dropdowns li.drop li a {
+	-webkit-border-top-left-radius: 0;
+	-webkit-border-top-right-radius: 0;
+	-moz-border-radius-topleft: 0;
+	-moz-border-radius-topright: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	}
+
+/* Override 2: If the link is a inside the last list in a dropdown, round its BOTTOM corners */
+
+ul#dropdowns li.drop li:last-child > a {
+	-webkit-border-bottom-left-radius: 5px;
+	-webkit-border-bottom-right-radius: 5px;
+	-moz-border-radius-bottomleft: 5px;
+	-moz-border-radius-bottomright: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	}
+

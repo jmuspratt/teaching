@@ -1,0 +1,66 @@
+	/* ------------------------
+	Reset the browser defaults
+	*/
+body, body * {margin:0; padding:0; text-indent:0; text-decoration:none; outline:none;}
+
+
+	/* ------------------------
+	Start by choosing a baseline grid (line-height) on which to build your page. This will be the foundation for all the design choices you make below. Just uncomment ONE of the three lines below.
+	*/
+
+/*body {background: url(15px.png) repeat 0 0; 	padding:30px; line-height:15px;}*/
+/*body {background: url(20px.png) repeat 0 0; 	padding:40px; line-height:20px;}*/
+/*body {background: url(25px.png) repeat 0 0; 	padding:50px; line-height:25px;}*/
+
+ 
+	/* ------------------------
+	Write a font stack for your page: pick Georgia, Futura, or Helvetica, and stick with it for the entire document. Set a font size that works well with the line-height you chose above. Also use this rule to pick a font-size that works well with the leading (line-height) you chose above.
+	*/
+
+/*body {} */
+
+
+	/* ------------------------
+	Set a width for your page: pay close attention to the "measure" of the text, i.e. the number of words in a line of running text, and how comfortable it feels. The Elements of Typographic Style (by Robert Bringhust) tells us to shoot for 45 to 75 characters in a line (about 7 to 12 words).
+	*/
+
+/*#main {}*/
+
+
+	/* ------------------------
+	Write some rules that define a typograhic hierarchy. Use classical typographic attributes like font size (font-size), vertical spacing (margins), indentation (text-indent), leading (line-height), and horizontal rules (border-top or border-bottom). Consider style variations like italics, bold-face, and small-caps. Use color sparingly if at all and don't be afraid to create dramatic contrast in scale. White space is your friend! 
+
+	Not every single element needs to hit the baseline, but you should do the math to make sure you are always working in multiples of the leading. For example, large text might hit every other baseline, because its line-height is set to double the baseline grid. Another example: if you want to add 10px above an element, and you're using the 15px grid, make sure to add 5px (or 20px) below it. 
+	*/
+
+
+	/* paragraphs */
+
+/*p {}*/
+
+
+	/* masthead */
+
+/*#masthead {}
+#masthead h1 {}
+#masthead h2 {}*/
+
+
+	/* subheadings */
+
+/*h3 {}*/
+
+
+	/* images + captions */
+	
+/*p.image {}*/
+p.image img {display:block;} /* this helps keep thing on track */
+/*p.cap {}*/
+
+
+	/* pullquotes (use text-indent to "hang" the quotation mark in the left margin!) */
+
+/*blockquote {}*/
+/*blockquote p {}*/
+
+

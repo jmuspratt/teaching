@@ -1,0 +1,41 @@
+/*Zero browser defaults*/
+body * {margin:0; padding:0; border:none;text-indent:0;text-decoration: none;outline:none;}
+
+/* ------------------------
+	Basic style 
+ ------------------------ */
+body			{font-family:georgia; font-size:15px; line-height:21px; }
+h1, h2, p, ol	{font-weight:normal;margin-bottom:15px;}
+ol li 			{margin-bottom:10px;}
+a 				{color:#00b4ff; /*blue*/}
+
+
+/* ------------------------
+	Nav 
+ ------------------------ */
+body#ex12 li#nav-12 a,
+body#ex13 li#nav-13 a, 
+body#ex14 li#nav-14 a {	
+	color:black;
+	}
+
+/* ------------------------
+	Layout 
+ ------------------------ */
+
+body {background: #fff url(guide13.jpg) no-repeat left top;}
+
+
+/* Write a rule for the main container that ...
+   - moves it to a point 200 px across and and 100 px down on the page 
+   - restricts its width to 550px */
+
+
+/* Wrap the text around the image-and-caption block */
+
+
+/* Style the h1 ("Watkins") so that...
+   - it is set in 60px Georgia
+   - it stays attached to the top of the window as the user scrolls
+   - it has overlay.png attached as a background image */
+

@@ -1,0 +1,132 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<title>Exercise 13: HTML5 Video (JS method)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- Conditional comment will load HTML5 shim for IE if less than version 9 -->
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<div id="container">
+	
+	<header>
+		<h1>HTML5 video</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html">Embedding</a></li>
+				<li class="current"><a href="jquery-method.html">Javascript Method</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="main">
+	
+	
+	<p>On this page we'll take a different approach to playing the videos. Rather than load them onto the page immediately, we'll hide them and show pre-made images in their place. Then, if one of them is clicked, a jQuery script will hide the image, replace it with its corresponding video, and start playing the video.
+		
+		<p><em>Examine the <code>script.js</code> file to see how the jQuery will operate before you get started</em>. Then follow the directions below:</p>
+	
+	<ol>
+		<li>The videos are already on the page. Hide them by using an inline style. Just add <code>style="display:none;"</code> as an attribute to each of the <code>video</code> tags below.</li>
+		<li>Find the corresponding "poster button" image in the images folder -- this is simply a poster image with a blue play button in the center. For each video, add <code>img</code> tags to the page inside the <code>trigger</code> divs to display the images.</li>
+		<li>Now wrap those images in a dummy link to make sure the images act like clickable elements</li>
+	
+<section>
+
+<div class="trigger">
+		<a href="#"><img src="images/gizmo-poster-button.jpg" alt="Click to Play Video"/></a>
+</div> <!-- /trigger -->
+
+		
+<!-- first try HTML5 playback: if serving as XML, expand `controls` to `controls="controls"` and autoplay likewise -->
+<!-- warning: playback does not work on iOS3 if you include the poster attribute! fixed in iOS4.0 -->
+<video id="video" style="display:none" width="560" height="320" poster="images/gizmo-poster.jpg" controls preload>
+	<!-- MP4 must be first for iPad! -->
+	
+	<!-- Safari / iOS video/Chrome 10    -->
+	<source src="video/gizmo.mp4" type="video/mp4" />
+	
+	<!-- Firefox -->
+    <source src="video/gizmo.ogv" type="video/ogg" />
+
+	<!-- Newer versions of Chrome --> 
+	<source src="video/gizmo.webm" type="video/webm" />
+	
+	<!-- fallback to Flash: -->
+		<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->	
+	 <object width="560" height="320" type="application/x-shockwave-flash" data="flowplayer-3.2.1.swf">
+        <param name="movie" value="flowplayer-3.2.1.swf" />
+        <param name="allowfullscreen" value="true" />
+        <param name="flashvars" value='config={"playlist":["images/gizmo-poster.jpg", {"url": "video/gizmo.mp4","autoPlay":true,"autoBuffering":true}]}' />
+        <!-- Image Fallback. Typically the same as the poster image. -->
+		<!-- fallback image. note the title field below, put the title of the video there -->
+		<img src="images/gizmo-poster.jpg" width="560" height="320" alt="Gizmo in action"
+		     title="No video playback capabilities." />
+	</object>
+</video>
+
+
+<!-- you *must* offer a download link as they may be able to play the file locally. customize this bit all you want -->
+<p class="download"><strong>Download Video:</strong> <a href="video/gizmo.mp4">MP4</a>, <a href="video/gizmo.ogv">OGV</a>, <a href="video/gizmo.webm">WebM</a>.</p>
+
+
+
+<div class="trigger">
+		<a href="#"><img class="poster" src="images/bigbuck-poster-button.jpg" alt="Click to Play Video"/></a>
+</div> <!-- /trigger -->
+
+
+		
+<!-- first try HTML5 playback: if serving as XML, expand `controls` to `controls="controls"` and autoplay likewise -->
+<!-- warning: playback does not work on iOS3 if you include the poster attribute! fixed in iOS4.0 -->
+<video id="video"  style="display:none" width="480" height="360" poster="images/bigbuck-poster.jpg" controls preload>
+	<!-- MP4 must be first for iPad! -->
+	<source src="video/bigbuck.mp4" type="video/mp4" />   <!-- Safari / iOS video/Chrome 10    -->
+    <source src="video/bigbuck.ogv" type="video/ogg" />   <!-- Firefox -->
+	<source src="video/bigbuck.webm" type="video/webm" /> <!-- Newer versions of Chrome -->
+	<!-- fallback to Flash: -->
+		<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->	
+	 <object width="480" height="360" type="application/x-shockwave-flash" data="flowplayer-3.2.1.swf">
+        <param name="movie" value="flowplayer-3.2.1.swf" />
+        <param name="allowfullscreen" value="true" />
+        <param name="flashvars" value='config={"playlist":["images/bigbuck-poster.jpg", {"url": "video/bigbuck.mp4","autoPlay":true,"autoBuffering":true}]}' />
+        <!-- Image Fallback. Typically the same as the poster image. -->
+		<!-- fallback image. note the title field below, put the title of the video there -->
+		<img src="images/bigbuck-poster.jpg" width="480" height="360" alt="bigbuck in action"
+		     title="No video playback capabilities." />
+	</object>
+</video>
+
+
+<!-- you *must* offer a download link as they may be able to play the file locally. customize this bit all you want -->
+<p class="download"><strong>Download Video:</strong> <a href="video/bigbuck.mp4">MP4</a>, <a href="video/bigbuck.ogv">OGV</a>, <a href="video/bigbuck.webm">WebM</a>.</p>
+
+
+
+
+
+</section> <!-- /section 1 -->
+
+
+	<footer>
+	<p>Copyright Watkins College 2011.</p>
+	</footer><!-- /footer -->
+	
+</div><!-- /main -->
+
+</div> <!-- /container -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>

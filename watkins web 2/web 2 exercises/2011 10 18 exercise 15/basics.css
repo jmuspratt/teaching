@@ -1,0 +1,81 @@
+/* ------------------------
+	Reset the browser defaults
+ ------------------------ */
+* {margin:0; padding:0; text-indent:0; text-decoration:none; outline:none;}
+
+
+
+
+
+
+/* ------------------------
+	Layout
+ ------------------------ */
+
+body  {
+	font-family:georgia, serif;
+	font-size:14px;
+	line-height:21px;
+	background-color:#eaeaea; /* light gray*/
+	}
+
+
+div#wrap {
+	width: 750px;
+	margin:20px auto; /* put 20px margin above/below and center horizontally */
+	}
+
+div#main {
+	padding:50px;
+	background-color: white; 
+	}
+
+section {
+	padding:20px 0;
+	clear:both;
+	float:left;
+	width:650px;
+	border-bottom:1px dotted #555;
+	}
+
+footer {clear:both; padding-top:10px; border-top:1px solid #eaeaea; margin-top:50px;}
+
+
+
+/* ------------------------
+	Type Styles
+ ------------------------ */
+
+a 	{color:#0675a4; /*blue*/ }
+a:hover {color:#2ec0fe;}
+
+
+h1, h2, h3 {
+	font-weight:normal; /* unbold headings */
+	clear:both;
+	}
+
+h1 {
+	margin:0 0 10px 0;
+	font-size:24px;
+	}
+
+h2 {
+	font-size:13px;
+	text-transform:uppercase;
+	letter-spacing:1px; 
+	margin:20px 0 20px 0;
+	}
+
+h3 {font-weight:bold; font-size:13px;}
+
+code {
+	background-color:#FFFBE0; /* 'highlight' code samples */
+	font-family:monospace;
+	}
+
+input {font-size:12px;}	
+
+.clear {clear:both;}
+
+#footer {clear:both;}

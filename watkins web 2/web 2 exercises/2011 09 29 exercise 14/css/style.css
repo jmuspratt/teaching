@@ -1,0 +1,117 @@
+/* ------------------------
+	Reset the browser defaults
+ ------------------------ */
+body, body * {margin:0; padding:0; text-indent:0; text-decoration:none; outline:none; border:0;}
+
+
+/* ------------------------
+	Tidbits
+ ------------------------ */
+
+.clear {clear:both;}
+
+.clearfix:after {content: "."; display: block; clear: both; visibility: hidden;line-height: 0;height: 0;}
+ 
+
+
+/* ------------------------
+	Basics
+ ------------------------ */
+
+body  {
+	font-family:helvetica, arial, sans-serif;
+	font-size:14px;
+	line-height:21px;
+	background-color:#eaeaea;
+	}
+
+
+/* ------------------------
+	Type Styles
+ ------------------------ */
+a 	{color:#0675a4; /*blue*/ }
+a:hover {color:#2ec0fe;}
+p {margin-bottom:10px;}
+.caps {font-size:90%; letter-spacing:1px;}
+h1, h2, h3, h4 {font-weight:normal;}
+h1 {margin:0 0 10px 0;font-size:24px; line-height:28px; border-bottom:1px dotted #888; padding-bottom:5px;}
+h2 {font-size:13px;text-transform:uppercase;letter-spacing:1px; margin:0 0 20px 0; line-height:18px;}
+h3 {margin:0 0 10px 0;}
+ul, ol {margin:0 0 10px 0;}
+ul {list-style:circle;}
+
+
+/* ------------------------
+	"Mobile First" means no floats, no columns, no fancy styles.
+	Here we set up page as simple container with a max-width and let content flow straight down the page.
+ ------------------------ */
+
+
+div#container {max-width: 1200px;position:relative;
+	padding:10px; margin:0 auto;}
+
+div#main {background-color: white; padding:20px;}
+
+
+/* Set images to scale down when their container becomes small than their file width */
+
+div#main img {max-width:100%;}
+
+nav		{border-top:1px dotted #888; padding-top:10px;}
+nav ul	{list-style:none;}
+nav li	{line-height:17px; margin-bottom:5px;}
+nav li:first-child {display:none;}
+
+h3 {border:1px dashed black; border-bottom:0; padding:2%;}
+p.credits {border:1px dashed black; border-top:0; padding:10px;}
+p.credits strong {color:red; text-transform:uppercase;font-size:9px; letter-spacing:1px;}
+
+#media-query-flag	{display:block; position:absolute; top:0; left:0; color:#fff;}
+#media-query-flag:before {content: "Small Screen"; background-color:red;}
+
+
+section 							{padding:30px 0 20px 0;margin:0 0 20px 0; }
+section#about h4, section#about ul	{list-style:none; font-size:11px;}
+
+
+footer {clear:both; padding-top:10px; border:1px solid #eaeaea;}
+
+
+/* ------------------------
+	Media Queries
+ ------------------------ */
+
+	/*------------ begin medium-screen layout   ------------*/
+	/* 501px wide up to 999px wide */
+@media screen and (min-width: 501px) and (max-width: 999px) {
+	
+	#media-query-flag:before {content:" Medium Screen"; background-color:blue;}
+	#header-and-about	{float:left; width:PERCENT%;}
+	#exhibits			{float:right; width:PERCENT%;}
+
+	}  
+	/*------------ end medium-screen layout   ------------*/
+
+
+
+
+	/*------------ begin wide-screen layout   ------------*/
+	/* 1000px wide up to 1200px wide (because #container has a max-width of 1200px -- see above) */
+
+@media screen and (min-width: 1000px) {
+
+	#media-query-flag:before {content:" Wide Screen"; background-color:orange;}
+	#header-and-about	{float:left; width:PERCENT%; position:relative;}
+	header	   			{width:PERCENT%; float:left;}
+	#about	   			{width:PERCENT%; float:right;}
+	#exhibits  			{float:right; width:PERCENT%;}
+	nav					{position:fixed; /*top:320px;*/}
+	nav li:first-child	{display:block; text-transform:uppercase; font-size:11px;}
+
+	}  
+	/*------------ end big-screen layout   ------------*/
+	
+
+
+
+

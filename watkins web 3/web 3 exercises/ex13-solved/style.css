@@ -1,0 +1,33 @@
+/* ------------------------
+	 Reset
+ ------------------------*/
+	body {background:#eaeaea;}
+	body, body * 	{margin:0; padding:0; text-indent:0; text-decoration: none; outline:none; font-weight:normal;}
+	body img		{border:0;}
+
+/* ------------------------
+	Useful classes
+ ------------------------ */
+	 .clear 	{clear:both;}
+	 .cf:after	{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+
+ /* ------------------------
+	 Content
+ ------------------------ */
+	body  			{font-family:georgia, serif; padding:0 20px 20px 20px; font-size:14px; line-height:21px; background-color:rgb(240,240,240); /* light gray*/ }
+	
+	#add 	{position:relative; opacity:.9; z-index:2; width: 330px; margin:0 auto 0 auto;  padding:5px 8px; font-family:arial;  font-size:12px;}
+	#add label {font-weight:bold;}
+	#add input[type="text"] {border:1px solid #eaeaea; background:white; padding:3px;}
+	
+	p.announce 		{font-size:18px;line-height:25px; padding:10px 0; margin:10px 0; border-bottom:1px dotted gray;}
+
+
+	p.error {font-weight:bold; font-family:arial, sans-serif;  padding:8px; background-color:yellow;}
+	
+	
+	
+	p.cool {color:blue;}
+	p.warm {color:red;}
+	p.nashville {font-style:italic;}

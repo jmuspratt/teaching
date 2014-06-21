@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<title>Exercise 13: HTML5 Video</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="css/common.css">
+
+	<!-- Conditional comment will load HTML5 shim for IE if less than version 9 -->
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	
+	<div id="container">
+	
+	<header>
+		<h1>HTML5 video</h1>
+		<nav>
+			<ul>
+				<li class="current"><a href="index.html">Embedding</a></li>
+				<li><a href="jquery-method.html">Javascript Method</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div id="main">
+		
+
+<section>		
+
+		<h2><em>No</em> Fallbacks</h2>
+		<h3>If only it were this simple...</h3>
+		
+		
+		<video width="560" height="320" controls>
+		<source src="video/gizmo.mp4" type="video/mp4" />
+		</video>
+
+</section>
+
+
+<section>	
+	<p>Copy and paste the <code>video</code> code block below. Then add the appropriate attributes to turn controls, autoplay, and preloading on or off as indicated.</p> 
+</section>
+	
+	
+	
+	
+<section>
+		<h2>With Fallbacks</h2>
+		<h3>Controls on, autoplay off, preload off</h3>
+	
+	
+<!-- first try HTML5 playback -->
+<!-- warning: playback does not work on iOS3 if you include the poster attribute! fixed in iOS4.0 -->
+<video width="560" height="320" poster="images/gizmo-poster.jpg" controls preload="none">
+	<!-- MP4 must be first for iPad! -->
+	
+	<!-- Safari / iOS video/Chrome 10    -->
+	<source src="video/gizmo.mp4" type="video/mp4" />
+	
+	<!-- Firefox -->  
+    <source src="video/gizmo.ogv" type="video/ogg" />
+
+	<!-- Newer/future versions of Chrome --> 
+	<source src="video/gizmo.webm" type="video/webm" /> 
+	
+	<!-- fallback to Flash: -->
+		<!-- Firefox uses the `data` attribute above, IE/Safari uses the param below -->	
+	 <object width="560" height="320" type="application/x-shockwave-flash" data="flowplayer-3.2.1.swf">
+        <param name="movie" value="flowplayer-3.2.1.swf" />
+        <param name="allowfullscreen" value="true" />
+        <param name="flashvars" value='config={"playlist":["images/gizmo-poster.jpg", {"url": "video/gizmo.mp4","autoPlay":false,"autoBuffering":true}]}' />
+        <!-- Image Fallback. Typically the same as the poster image. -->
+		<!-- fallback image. note the title field below, put the title of the video there -->
+		<img src="images/gizmo-poster.jpg" width="560" height="320" alt="Gizmo in action" title="No video playback capabilities." />
+	</object>
+</video>
+<!-- you *must* offer a download link as they may be able to play the file locally. customize this bit all you want -->
+<p class="download"><strong>Download Video:</strong> <a href="video/gizmo.mp4">MP4</a>, <a href="video/gizmo.ogv">OGV, <a href="video/gizmo.webm">WebM</a>.</p>
+</section>
+
+
+<section>
+		<h2>With Fallbacks</h2>
+		<h3>Controls on, autoplay off, preload on</h3>
+		
+</section>
+<section>
+		<h2>With Fallbacks</h2>
+		<h3>Controls off, autoplay on, preload on</h3>
+
+</section>
+
+
+
+
+	<footer>
+	<p>Copyright Watkins College 2011.</p>
+	</footer><!-- /footer -->
+	
+</div><!-- /main -->
+
+</div> <!-- /container -->
+
+</body>
+</html>

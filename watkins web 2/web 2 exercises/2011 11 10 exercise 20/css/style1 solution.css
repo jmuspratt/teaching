@@ -1,0 +1,17 @@
+ @import url("basics.css");
+#set-style1 {font-weight:bold; border-bottom:2px solid white;}
+
+
+/* ------------------
+ Your styles go below  */
+
+
+img {max-width:100%;}
+
+
+#primary .feature-image {margin: 0 auto;width:525px; }
+#primary p { font-size:15px; line-height:24px;}
+
+#secondary 	{float:left;  width:387px; margin-top:20px;}
+#tertiary 	{float:right; width:387px; margin-top:20px;}
+ {font-size:11px; line-height:14px;}

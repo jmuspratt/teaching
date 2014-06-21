@@ -1,0 +1,45 @@
+/*Zero browser defaults*/
+body * {margin:0; padding:0; border:none;text-indent:0;text-decoration: none;outline:none;}
+
+/* ------------------------
+	Basic style 
+ ------------------------ */
+body			{font-family:georgia; font-size:15px; line-height:21px; background-color:#e7e7e7; /* light gray*/}
+h1, h2, p, ol	{font-weight:normal;margin-bottom:15px;}
+ol li 			{margin-bottom:10px;}
+a 				{color:#00b4ff; /*blue*/}
+li.current a	{color:black;}
+code			{	font-family: courier, monospace; background-color:#fff9cb; /* light yellow 'highlighter'*/ }
+
+
+
+/* ------------------------
+	Layout 
+ ------------------------ */
+
+
+div#wrap {
+	width: 700px;
+	margin: 0 auto 0 auto;
+	}
+
+/* ------------------------
+	Background Images with Shadows 
+ ------------------------ */
+
+#start {
+	height:50px;
+	background: transparent url(shadow-start.png) no-repeat center top;
+	}
+	
+#end {
+	background:transparent;
+	}
+		
+div#main {
+	width: 500px;
+	padding:0px 100px 100px 100px;
+	}
+
+
+		

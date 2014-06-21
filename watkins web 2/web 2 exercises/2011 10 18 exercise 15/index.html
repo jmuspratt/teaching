@@ -1,0 +1,221 @@
+<!doctype html>
+<!--[if lt IE 7]> <html lang="en"> <![endif]-->
+<!--[if IE 7]>    <html lang="en"> <![endif]-->
+<!--[if IE 8]>    <html lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<title>Exercise 15</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<link rel="stylesheet" type="text/CSS" href="basics.css" media="screen" />
+<link rel="stylesheet" type="text/CSS" href="style.css" media="screen" />
+
+	<!--[if lt IE 9]>
+	<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+
+
+<div id="wrap">
+
+<div id="main">
+
+
+<h1>More Forms: fields, buttons, controls</h1>
+
+<ol>
+<li>Read the <a href="http://web2.jamesmuspratt.com/blog/advanced-forms-and-attribute-selectors">Advanced Forms</a> blog post</li>	
+<li>Open <code>index.html</code> and review the markup of each form. </li>
+<li>Open <code>style.css</code> and add the styles described, reloading your page as you work. You may not edit the <span class="caps">HTML</span>. As you work through this exercise, adding styles to each section, reload your page frequently in both Safari and Firefox. Each browser has its own default style of form elements, and often they react to your style rules differently. Remember, your control over consistent rendering across browsers is <em>limited</em>, and this is especially true with forms.</li>
+	</ol>
+
+
+<!-- ///////// Part 1 ///////// -->
+<section id="part1">
+
+<h2>Textareas and inputs</h2>
+
+
+<h3>HTML5 Contact Form</h3>
+	 <!-- START FORM  -->
+	<form id="contact" method="post" action="#">
+
+		<div>
+			<label for="contact-name">Your Name</label>
+			<input id="contact-name" name="contact-name" required />
+		</div>
+		
+		<div>
+			<label for="contact-email">Your Website</label>
+			<input type="url" id="contact-url" name="contact-url" />
+		</div>
+		
+		<div>
+			<label for="contact-email">Your Email Address</label>
+			<input type="email" id="contact-email" name="contact-email" required />
+		</div>				
+
+		<div>
+			<label for="contact-phone">Phone</label>
+			<input type="tel" id="contact-phone" name="contact-phone"  placeholder="(123) 456-789" required>
+		</div>
+		
+		<div>
+			<label for="contact-color">Your Favorite Color</label>
+			<input type="text" id="contact-color" name="contact-color">
+		</div>
+		
+		<div>
+			<label for="contact-text">Message</label>
+			<textarea id="contact-text" name="contact-text" rows="10" cols="28"></textarea>
+		</div>
+		
+		<div>
+			<input type="submit" class="button" id="contact-submit" value="Send Message" />
+		</div>						
+		
+	</form>
+	 <!-- END FORM  -->
+
+
+<h3>HTML5 Login Form Without Labels</h3>
+	 <!-- START FORM  -->
+	<form id="login" method="post" action="#">
+		<div>
+			<input type="text" placeholder="Username" name="username-input" id="username-input" />
+			<input type="password" placeholder="Secret Password" name="pwd-input" id="pwd-input" />
+		</div>
+
+		<p><input id="login-submit" value="Log In" type="submit" /></p>						
+	</form>
+	 <!-- END FORM  -->
+
+<h3>HTML5 Search Form Without Labels</h3>
+	 <!-- START FORM  -->
+	<form id="search" method="post" action="#">
+		<div>
+			<input type="search" placeholder="Keywords" name="search-input" id="search-input" />
+		</div>
+
+		<p><input type="submit" id="search-submit" value="Run the Search!" /></p>						
+	</form>
+	 <!-- END FORM  -->
+
+
+</section>
+
+<!-- ///////// Part 2 ///////// -->
+<section id="part2">
+
+<h2>Radio Buttons and Checkboxes</h2>
+	
+	<h3>Order Your Dinner</h3>
+	 <!-- START FORM  -->
+	<form id="dinner" method="post" action="#">
+	
+		<!-- Note that all the radio buttons have the same value ("dinnerchoice") on their name attribute. Also notice the labels go after their inputs, since it looks better on the rendered page  -->
+		
+		<h4>Main Course</h4>
+		<div>
+			<input type="radio" value="Lobster" name="dinnerchoice" id="lobster" />
+			<label for="lobster">Lobster</label>
+		</div>
+	
+		<div>
+			<input type="radio" value="Steak" name="dinnerchoice" id="steak" />
+			<label for="steak">Steak</label>
+		</div>
+	
+		<div>
+			<input type="radio" value="Tofu" name="dinnerchoice" id="tofu" />
+			<label for="tofu">Tofu</label>
+		</div>
+	
+		<h4>Extras</h4>
+		<div>
+			<input type="checkbox" name="horseradish" id="horseradish" />
+			<label for="horseradish">Horseradish on the side</label>
+		</div>
+			
+		<div>
+			<input type="checkbox" checked="checked" name="mayo" id="mayo" />
+			<label for="mayo">Extra Mayo</label>
+		</div>
+	</form>
+	<!-- END FORM  -->
+	
+</section>
+
+<!-- ///////// Part 3 ///////// --> 
+
+<section id="part3">
+
+<h2>"Option" pop-up menus.</h2>
+	
+		<h3>Free T-Shirt!</h3>
+
+	 <!-- START FORM  -->
+	<form id="tshirt" method="post" action="#">
+
+		<div>
+			
+			<label for="tshirt-size">Color for your free T-Shirt </label>
+			
+			<select id="tshirt-color" name="tshirt-color">
+ 				<option value="brown">Brown</option>
+				<option value="beige">Beige</option>
+				<option value="mustard">Mustard</option>
+			</select>
+			
+			
+			<label for="tshirt-size">Size for your free T-Shirt </label>
+	
+			<select id="tshirt-size" name="tshirt-size">
+				<optgroup label="Large">
+					<option value="xlarge">X-Large</option>
+					<option value="large">Large</option>
+				</optgroup>
+				
+				<optgroup label="Medium">
+					<option value="medium">Medium big</option>
+					<option value="mediumsmall">Medium small</option>
+				</optgroup>
+				
+				<optgroup label="Small">
+					<option value="small">Small</option>
+					<option value="reallysmall">Really Small</option>
+				</optgroup>
+			</select>
+		</div>
+		
+		
+		<div>
+		<input type="checkbox" name="mailing-list" id="mailing-list" checked="checked" />
+		<label for="mailing-list">Send me spam because I failed to see this checkbox</label>
+		</div>
+		
+		<div>
+		<input type="submit" name="tshirt-submit" id="shirt-tsubmit" value="Send Me My Shirt" />
+		</div>
+	</form>
+	<!-- END FORM  -->
+
+</section>
+
+	
+	
+	<footer class="clearfix">
+	<p>Copyright Watkins College 2011.</p>
+	</footer><!-- /footer -->
+	
+</div> <!-- end main -->
+
+</div> <!-- end wrap -->
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.6.2.min.js"><\/script>')</script>
+
+<script src="js/script.js"></script>
+</body>
+</html>

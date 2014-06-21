@@ -1,0 +1,23 @@
+ @import url("basics.css");
+#set-style3 {font-weight:bold; border-bottom:2px solid white;}
+
+
+/* ------------------
+ Your styles go below  */
+
+img {max-width:100%;}
+
+#primary {float:left; width: 525px;}
+
+#primary p {margin-top:20px; font-size:18px; line-height:26px;}
+
+#secondary {float:right; width:250px;}
+#secondary p, #secondary ul, #tertiary p, #tertiary ul {font-size:11px; line-height:15px;}
+
+.group p, .group ul {font-size:11px; line-height:14px;}
+
+#tertiary {float:left; margin-top:20px; padding-top:10px;  clear:both; border-top:2px solid black; border-bottom:2px solid black; padding-bottom:10px; }
+#tertiary .group {float:left; width:250px;margin-right:25px;}
+#tertiary .group:last-child {margin-right:0;}
+
+.group {margin-top:10px;}

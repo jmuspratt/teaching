@@ -1,0 +1,19 @@
+/* Part 1 */
+
+
+.section {
+	float:left; 
+	width:650px;
+	background:transparent url(images/faux-columns.jpg) repeat-y  0 0;	
+	}
+
+
+
+.sidebar {width:200px; float:right;}
+
+.content {width: 400px; float:left;}
+
+
+
+/* Part 2 */
+

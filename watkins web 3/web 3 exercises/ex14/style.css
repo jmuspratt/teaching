@@ -1,0 +1,46 @@
+/* ------------------------
+	 Reset
+ ------------------------*/
+	body, body * 	{margin:0; padding:0; text-indent:0; text-decoration: none; outline:none; font-weight:normal;}
+	body img		{border:0;}
+
+/* ------------------------
+	Useful classes
+ ------------------------ */
+	 .clear 	{clear:both;}
+	 .cf:after	{content: "."; display: block; height: 0; clear: both; visibility: hidden;}
+
+ /* ------------------------
+	 Type
+ ------------------------ */
+	body {font-family:arial, sans-serif;}
+	h1 {margin:10px 0; font-size:20px; line-height:30px; font-weight:normal;}
+	h2 {margin:10px 0; font-size:15px; line-height:30px; font-weight:normal;}
+	p {margin:10px 0;}
+	strong {font-weight:bold;}
+	label {font-size:12px; font-weight:bold;}
+	form {width:400px;}
+	nav {margin-left:10px; font-size:12px;}
+	a {color:#0994e4;}
+	a.current {color:black; font-weight:bold;}
+
+
+ /* ------------------------
+	 Layout/Content
+ ------------------------ */
+ 	
+	 #main {max-width:1200px; margin:20px auto; padding:20px;}
+	 .candidate {font-family:courier, monospace; font-size:10px; line-height:12px;}
+
+/* ------------------------
+	 Contributions
+------------------------ */
+	
+	.contribution {margin:0 1px 1px 0; background:#fff5b5;}
+	.c50 {background-color:#fff088;}
+	.c100 {background-color:#ffcd45;}
+	.c500 {background-color:#f6bd24;}
+	.c1000 {background-color:#f69a24;}
+	.c1500 {background-color:#fc7304;}
+	.c2000 {background-color:#fc5604;}
+	.c2500 {background-color:#fc3e04;}

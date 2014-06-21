@@ -1,0 +1,31 @@
+/* Reset */
+	body, body * 	{margin:0; padding:0; text-indent:0; text-decoration: none; outline:none; }
+
+
+/* Set up the page's primary font-family, font-size, and line-height. */
+	body 	{font-family:helvetica, arial; font-size:13px; line-height:20px;}
+
+
+/* Target the #wrap div and give it a width of 420px and padding of 20px (for a total width of 480px) */
+	#wrap 	{width:500px; margin:0 auto; border:1px solid #eaeaea; padding:20px;}
+
+	header h1 {color:gray; padding-top:30px; font-size:35px; line-height: 35px; padding-bottom:20px;}
+	header h1 strong {color:black;}
+
+	a {color:green; font-weight:bold; border-bottom:1px solid green;}
+
+
+	section {border-top:2px solid #eaeaea; }
+	section ul {margin:10px 0;}
+	section h2 {margin-top:30px; font-size:18px;}
+	section h3 {color:orange; font-size:15px; margin:15px 0 0 0 ;}
+	
+
+	.skills 		{ list-style:none; background-color:#eaeaea; padding:10px 20px 20px 20px; margin-top:5px;}
+	.skills li 		{background-color:orange; display:block; height:37px; padding-top:13px; text-align:center; font-weight:bold; color:white; font-size:15px; margin-top:10px;}	
+
+	#contact {margin-top:20px; background:green; padding:1px 20px 20px 20px;}
+
+	#contact h2 				{color:white;}
+	#contact h3, #contact p 	{color:white}
+	#contact a					{color:white; font-weight:bold; border-bottom:1px solid white;}

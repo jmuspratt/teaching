@@ -1,0 +1,141 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+<title>Exercise 4</title>
+<link rel="stylesheet" type="text/CSS" href="common.css" media="screen" />
+<link rel="stylesheet" type="text/CSS" href="exercise4.css" media="screen" />
+</head>
+
+<body>
+
+<ul id="nav">
+<li class="current"><a href="exercise4.html">Exercise 4: Floats</a></li>
+<li><a href="exercise5.html">Exercise 5: Positioning</a></li>
+<li><a href="exercise6.html">Exercise 6: Advanced Layout </a></li>
+</ul>
+
+
+<div id="wrap">
+
+<div id="main">
+
+<h1>Floats</h1>
+<p>Use Dreamweaver to edit the CSS file. You may not edit the HTML.</p>
+
+<div class="section">
+
+<h2>Part 1</h2>
+<p>Assigning multiple classes to an HTML element can be a powerful way of controlling formatting in a more flexible, modular way:</p>
+<ol>
+<li>At the beginning of the two paragraphs below, a <code>span</code> is wrapping an image and caption. Use <code>imagecap</code> to make a  caption style: make the text color a small, all-caps sans-serif in gray. Also remember to letter-space the text, since it's all-caps.</li>
+
+<li>The span has one other class: <code>left</code> or <code>right</code>: Write rules to float them left or right. Check your work and add padding on the appropriate sides of the <code>span</code> so that the image/caption are separated from the surrounding paragraph.</li>
+
+</ol>
+
+<h2>A Subheading</h2>
+
+<p><span class="imagecap left"><img src="images/nashville.jpg" alt="Nashville" /><br />The Nashville sky line</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p><span class="imagecap right"><img src="images/nashville.jpg" alt="Nashville" /><br />The Nashville sky line</span>Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia  sunt in culpa qui officia deserunt mollit anim id est laborum. In reprehenderit in voluptate velit esse cillum  id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+</div>
+
+
+<div class="section" id="part2">
+
+
+<h2>Part 2</h2>
+<ol>
+<li>Write a rule that adds a the background color <code>#bbf6ff</code> to <code>ul#gallery</code>. Add 15px of padding to <code>ul#gallery</code> and float to the left. This is called <em>floating the container</em> and is almost always a good first step when you plan on floating the contents of an element.</li>
+<li>The images and captions below are marked up as a simple unordered list: the most common way of marking up a gallery of thumbnails. First style the captions to be like the captions in Part 1.</li>
+<li>Use CSS to remove the bullets and float the list items (<code>li</code>) into a grid of thumbnails.</li>
+<li>Most likely the different caption lengths will be messing up your grid. What CSS rules can you add to solve this?</li>
+</ol>
+
+
+<ul id="gallery">
+<li><img src="images/nashville.jpg" alt="Nashville" /><br />The Nashville Skyline</li>
+<li><img src="images/nashville.jpg" alt="Nashville" /><br />The Nashville Skyline. But this caption is longer. </li>
+<li><img src="images/nashville.jpg" alt="Nashville" /><br />The Nashville Skyline</li>
+<li><img src="images/nashville.jpg" alt="Nashville" /><br />The Nashville Skyline</li>
+<li><img src="images/nashville.jpg" alt="Nashville" /><br />The Nashville Skyline. But this caption is longer. </li>
+<li><img src="images/nashville.jpg" alt="Nashville" /><br />The Nashville Skyline</li>
+<li><img src="images/nashville.jpg" alt="Nashville" /><br />The Nashville Skyline</li>
+<li><img src="images/nashville.jpg" alt="Nashville" /><br />The Nashville Skyline</li>
+
+</ul>
+
+</div> <!-- end section part 3 -->
+
+
+
+
+<div class="section" id="part3">
+<h2>Part 3</h2>
+
+<p>Woohoo, a form!</p>
+
+<ol>
+<li>The markup below is very common: a <code>form</code> tag containing multiple groups of <code>label</code>s and <code>input</code>s, with those pairs wrapped in <code>div</code>s for convenience. Let's use floats to create a cleaner arrangement between the labels and their fields:</li>
+<li>Target <code>#contact-form</code> and give it some padding and a light gray background color (#eaeaea)</li>
+<li>Remember, the <code>div</code> tag is just a generic, block-level container. It doesn't always need an id or class to be useful. Target all the <code>div</code>s in <code>#contact-form</code> and float them left. Optional: shout "Floating the container!" out loud. Add a 1px white bottom border and top- and bottom-padding to these <code>div</code>s, too.</li>
+<li>Now we'll attach the pair of tags inside the <code>div</code>s and use the "opposing floats" technique. First, target the <code>label</code>s. Set them to be small, sans-serif, and bold. Give them a width and float them left.; </li>
+<li>Everything probably looks crazy: we still need to do the second half of "opposing floats." Target all the <code>input</code> tags in the <code>#contact-form</code>, give them a width, and float them right. Now tinker with the widths until your form looks good. Hint: since your essentially creating two columns each set of floats, make sure the widths add up to <em>620px or less</em>.</li>
+<li>In the same rule, refine your input styles: turn off borders and add padding. Also set the font to a light gray color.</li>
+<li>The last div in the form pairs a <code>label</code> with a <code>textarea</code> instead of an <code>input</code>: go back up to your selector, add a comma, and get the rule to apply to this pair as well.</li>
+<li>Since your default style is now gray, lets add a rule specifically for the form the user is typing into: Use the <code>:focus</code> pseudo-class to set the color to black.</li>
+<li>Lets say we want to provide the user with a cue about which fields are required, as they're inputting they're text. Use the <code>.required</code> class in conjunction with <code>:focus</code> to add a blue border around those particular fields.</li>
+<li>Finally, add some margin to the submit button to left-align it with the input fields.</li>
+<li>Bonus: go back to your rule for the <code>label</code>s and add <code>text-align:right;</code>. Does this improve or detract from legibility/usability?</li>
+</ol>
+
+
+<form id="contact-form" method="post" action="#">
+
+		<div>
+		<label for="contact-author">Name:</label>
+		<input id="contact-author" name="message" class="required" />
+		</div>
+					
+		<div>
+		<label for="contact-email">Email Address:</label>
+		<input id="contact-email" name="from" class="required" />
+		</div>
+				
+		<div>
+		<label for="contact-url">URL:<span> (optional)</span></label>
+		<input id="contact-url" name="contact-url" />
+		</div>
+		
+		<div>
+		<label for="contact-subject">Subject:</label>
+		<input id="contact-subject" name="subject" class="required" />
+		</div>
+		
+		<div>
+		<label for="contact-text">Message:</label>
+		<textarea id="contact-text" name="contact-text" class="required" rows="10" cols="28"></textarea>
+		</div>
+		
+		<p><input id="contact-submit" value="Send Message" type="submit" /></p>						
+		
+		</form>
+
+</div> <!-- end section part 3 -->
+
+
+	
+	
+<p id="footer">&#169; Watkins College of Art and Design.</p>
+
+</div> <!-- end main -->
+
+</div> <!-- end wrap -->
+
+
+
+</body>
+</html>

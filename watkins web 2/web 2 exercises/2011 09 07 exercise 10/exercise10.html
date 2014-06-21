@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+<title>Exercise 10</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+
+<!-- CSS  -->
+<link rel="stylesheet" type="text/css" href="css/common.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/exercise10.css" media="screen" />
+
+<!-- Google's copy of jQuery, loaded from their servers -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js" type="text/javascript"></script>
+
+<!-- Lightbox jQuery Plugin, loaded from an external file -->
+<script src="js/jquery.lightbox-0.5.js" type="text/javascript"></script> 
+
+<!-- jQuery code I wrote/stole, loaded from an external file -->
+<script src="js/some-scripts.js" type="text/javascript"></script>
+
+
+</head>
+
+
+<body>
+
+<div id="wrap">
+
+<div id="main">
+
+
+<h1>jQuery</h1>
+
+<div class="section">
+
+	<h2>Introduction</h2>
+
+	<p><a href="http://jquery.com">jQuery</a> is a popular Javascript library for a whole range of page manipulations that are difficult or impossible with <span class="caps">HTML</span> or <span class="caps">CSS</span>. Usually we use it to create animations or alter the contents of a page without reloading it. Remember that these manipulations are only altering the page <em>as it exists in the memory of the browser.</em> If you reload the page, you&#8217;ll reset everything back to the way it was.</p>
+
+	<p>jQuery can involve up to three chunks of Javascript, and they need to be loaded via the <code>&#60;script&#62;</code> tags <em>in the order described below</em>: </p>
+
+	<ol>
+		<li>Take a look at how this <span class="caps">HTML</span> page is structured. Up in the <code>&#60;head&#62;</code> tag, I&#8217;ve first embedded the jQuery library itself &#8212; this is always necessary. Many people choose to load this file locally, just like a <span class="caps">CSS</span> file. But here I&#8217;ve been lazy and just loaded it straight from Google&#8217;s servers (<code>&#60;script src=&#34;http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js&#34;&#62;&#60;/script&#62;</code>), who host it for the rest of the internet to use. This works fine, but if Google ever takes the file down, the functionality on this page would break. The library itself is really only comprehensible for the browser: you never need to look at it or edit it.</li>
+		<li>Second we have a jQuery <em>plugin</em>: <code>&#60;script src=&#34;js/jquery.lightbox-0.5.js&#34; type=&#34;text/javascript&#34;&#62;&#60;/script&#62;</code>; this is a Javascript file I downloaded from the developer&#8217;s website and am loading locally. Plugins are only necessary for fancier jQuery effects: in our case it&#8217;s just the lightbox effect (Part 3) that requires it.</li>
+		<li>Finally we always write jQuery code that is specific to our page and the effects we want. Often you will see this written in the <span class="caps">HTML</span> page between <code>&#60;script&#62;</code> tags. In this exercise, though I&#8217;ve put everything in a separate text file (<code>some-scripts.js</code>) and linked to it.</li>
+	</ol>
+
+</div>
+
+<div class="section">
+
+<h2>Part 1: Expanding/Collapsing Boxes</h2>
+<p>Credits: this section is adapted from the <a href="http://www.sohtanaka.com/web-design/easy-toggle-jquery-tutorial/">Simple Toggle with <span class="caps">CSS</span> and jQuery</a> tutorial, by Soh Tanaka.</p>
+
+
+	<ol>
+		<li>Open <code>exercise10.html</code> and <code>some-scripts.js</code> in Dreamweaver or Textwrangler; also open <code>exercise10.html</code> in Safari. Try clicking on the three blue toggle bars below to see how they work.</li>
+		<li>Look at the top of <code>some-scripts.js</code>. For now, you can ignore the <code>$(document).ready(function(){...</code> line of code. It just tells jQuery to wait until the whole page has loaded before starting to do anything.</li>
+		<li>Notice the comments: Comments in Javascript/jQuery begin with two slashes and don&#8217;t need to be closed (the whole line becomes inactive). Try commenting out the  <code>$(&#34;.toggle-content&#34;).hide();</code> line of code, saving the file, and reloading the web page. You should see the boxes now are open when the page loads, but otherwise function as before.</li>
+	<li>Add a fourth toggle box (name it Toggle 4) by copying/pasting the toggle 3 <span class="caps">HTML</span> and altering it as required. You won&#8217;t need to write any new jQuery.</li> 
+		<li>The next block of jQuery code does the actual opening/closing of the boxes. In addition, we use the <code>toggleClass()</code> function to dynamically add and remove the <code>active</code> class whenever we click on the h3. This is useful because we can write a rule for the <code>.active</code> <span class="caps">CSS</span> class in our  <code>exercise10.css</code> file. Try opening that <span class="caps">CSS</span> file and finding the rule that modifies the link inside the h3 when/if it has the active class. Change the orange to green and test the page.</li>
+		<li>Part 1 also makes use of the <code>next()</code> function: here it is cleverly used to dynamically target whatever <span class="caps">HTML</span> element <em>immediately follows</em> the h3 that was clicked. Go into <code>exercise10.html</code>, locate the <span class="caps">HTML</span> for Toggle 3, and insert something like <code>&#60;p&#62;Test&#60;/p&#62;</code> right before <code>&#60;div class=&#34;toggle-content&#34;&#62;</code>. Save the file and reload the page. You should see that the paragraph you inserted has become the thing that gets shown/hidden when clicking, because it is now the element that immediately follows the <code>&#60;h3&#62;</code> trigger.</li>
+	</ol>
+
+
+
+
+<h3 class="toggle-trigger"><a href="#">Toggle 1</a></h3>
+<div class="toggle-content">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<h3 class="toggle-trigger"><a href="#">Toggle 2</a></h3>
+
+
+<div class="toggle-content">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+<h3 class="toggle-trigger"><a href="#">Toggle 3</a></h3>
+<div class="toggle-content">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+</div>
+
+
+</div> <!-- /section -->
+
+
+
+<div class="section" id="part1">
+
+
+
+<h2>Part 2: In-page Tabs</h2>
+
+<p>Credits: this section is adapted from the <a href="http://www.sohtanaka.com/web-design/simple-tabs-w-css-jquery/">Simple Tabs with <span class="caps">CSS</span> &#38; jQuery</a> tutorial, by Soh Tanaka.</p>
+
+
+	<ol>
+		<li>Try out the tabs below. Look at the <span class="caps">HTML</span> source, and add a fifth tab and corresponding content box. Notice how this structure differs from Part 1: the tab links do not directly preceide their corresponding content boxes. Instead, they are linked via hash links (<code>&#60;a href=&#34;#tab1&#34;&#62;</code>) to their content <code>&#60;div&#62;</code>s: this is nice logical markup: if Javascript were turned off, the content of all five boxes would pour down the page, but the "tab" links would still function as jump links, zooming the user down to the correct content area when they clicked a tab. This is the principle of <em>graceful degradation</em> in action: jQuery is being used to enhance the layout and present content in a cooler/more compact way, but the content is always accessible and logically marked up, even if accessed by an ancient browser, screen reader, etc.</li>
+		<li>The cleverest part of jQuery is that it uses <em><span class="caps">CSS</span> selector syntax</em> to target the <span class="caps">HTML</span> elements you want to manipulate. Go back to <code>some-scripts.js</code> and read through the jQuery code for Part 2, step by step, as you look at the <span class="caps">HTML</span> for Part 2 in <code>exercise10.html</code>. The functions may be new, but you should recognize the <span class="caps">HTML</span> selectors, including pseudo classes. (Note that <code>:first</code> is actually specific to jQuery &#8212; in <span class="caps">CSS</span> we only have <code>:first-child</code>). Try commenting out each line in turn, saving the file, and reloading the page. When you&#8217;re done, make sure everything is the way it was when you started.</li>
+		<li>This example is particularly interesting because it makes use of Javascript variables (<code>activeTab</code>) and the fact that the tabs are linked to the IDs on the tab-content divs. Notice in particular how when you comment this line out, the tabs stop working.</li>
+		<li>Using the jQuery code from Part 1 as a model, find where the slideToggle speed was set and try modifying Part 2 so that the initial showing of the first tab content happens at a <em>fast</em> speed instead of 800 milliseconds. Now try using that same syntax on the  <code>hide()</code> function,which is used to hide all the tab content on click. Try making that same hiding function happen over 1000 milliseconds. Then try 100 milliseconds. Hint: words need quotation marks, numbers don&#8217;t.</li>
+	</ol>
+	
+
+	<ul class="tabs">
+		<li><a href="#tab1">Tab 1</a></li>
+		<li><a href="#tab2">Tab 2</a></li>
+		<li><a href="#tab3">Tab 3</a></li>
+		<li><a href="#tab4">Tab 4</a></li>
+	</ul>
+
+    <div id="tabs-container">
+
+        <div id="tab1" class="tab-content">
+		<h2>Tab 1</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		
+		<div id="tab2" class="tab-content">
+		<h2>Tab 2</h2>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+		</div>
+		
+		<div id="tab3" class="tab-content">
+		<h2>Tab 3</h2>
+		<p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+		
+		<div id="tab4" class="tab-content">
+		<h2>Tab 4</h2>
+		<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</div>
+
+</div> <!-- /tabs-container -->
+
+
+</div> <!-- /section -->
+
+<div class="section">
+
+<h2>Part 3: Lightbox</h2>
+<p>Credits: this section makes use of the <a href="http://leandrovieira.com/projects/jquery/lightbox/">jQuery Lightbox</a> plugin by Leandro Vieira Pinho.</p>
+
+<ol>
+		<li>Take a look at Part 3 in both <code>somescripts.js</code> and <code>exercise10.html</code>.  With Set 1 (the Process Type Foundry images), I&#8217;ve only used the <code>lightbox()</code> function by itself. Try it out in the browser by clicking on the thumbnails. Now comment out this line and re-test the page. Notice that since the thumbnails are simply linked to their corresponding <span class="caps">JPG</span>s with plain <span class="caps">HTML</span>, the page still &#8220;works&#8221; (though the user needs to use the back button). Once again we have &#8220;graceful degradation&#8221;: if something goes wrong or the user doesn&#8217;t have Javascript turned on, our markup is good enough that the page does not fail completely.</li>
+		<li>With Set 2, I&#8217;ve invoked the <code>lightbox()</code> function again, but this time I&#8217;ve used some of the custom variables that the plugin makes available. Try tinkering with these values. Remember that speeds are measured in milliseconds. Try tinkering with these values: change the background overlay color, its opacity, etc.</li>
+		<li>Finally, visit <a href="http://leandrovieira.com/projects/jquery/lightbox/">the developer&#8217;s website</a>, go to the &#8220;Extend&#8221; section, and pick another value to add to the code to  change some other attribute of the lightbo.</li>
+	</ol>
+
+
+<h3>Process Type Foundry</h3>
+<h4><a href="http://processtypefoundry.com" title="Bryant, awesome font">http://processtypefoundry.com</a></h4>
+
+<ul id="set1" class="gallery">
+<li><a href="images/process/bryant.png"><img src="images/process/bryant-thumb.png" alt="Bryant" /></a></li>
+<li><a href="images/process/klavika.png"><img src="images/process/klavika-thumb.png" alt="Klavika" /></a></li>
+<li><a href="images/process/stratum.png"><img src="images/process/stratum-thumb.png" alt="Stratum" /></a></li>
+</ul>
+	
+
+<h3>Village</h3>
+<h4><a href="http://vllg.com">http://vllg.com</a></h4>
+
+<ul id="set2" class="gallery">
+<li><a href="images/village/flama.png"><img src="images/village/flama-thumb.png" alt="Flama" /></a></li>
+<li><a href="images/village/kina.png"><img src="images/village/kina-thumb.png" alt="Kina" /></a></li>
+<li><a href="images/village/stag.png"><img src="images/village/stag-thumb.png" alt="Stag" /></a></li>
+</ul>
+	
+
+</div> <!-- /section -->
+
+
+	
+<p id="footer">Watkins College of Art and Design.</p>
+
+</div> <!-- end main -->
+
+</div> <!-- end wrap -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+<title>Exercise 3</title>
+<link rel="stylesheet" type="text/CSS" href="common.css" media="screen" />
+<link rel="stylesheet" type="text/CSS" href="exercise3.css" media="screen" />
+</head>
+
+<body>
+
+<ul id="nav">
+<li><a href="exercise1.html">Exercise 1: Selectors</a></li>
+<li><a href="exercise2.html">Exercise 2: Basic Box Model</a></li>
+<li class="current"><a href="exercise3.html">Exercise 3: Advanced Box Model </a></li>
+</ul>
+
+
+<div id="wrap">
+
+<div id="main">
+
+<h1>Advanced Box Model</h1>
+
+<p class="instructions">Make the following changes to the text below using Dreamweaver. <em>You may only edit the CSS.</em></p>
+
+
+<div class="section">
+
+<h2>Part 1</h2>
+<ol>
+<li>Write a rule that adds a 1px dotted gray border and 5px of padding to <em>both</em> <code>paragraph1</code> and <code>paragraph2</code> below </li>
+<li>Remember that <em>everything is a box</em> in HTML/CSS. Target the bold text in <code>paragraph2</code> and add a 1px solid red border. Now add a left margin of 20px and a right margin of -20px (which will cause text to overlap.</li>
+<li>Target the text that has been given a class of <code>special</code> in <code>paragraph2</code>. Make the text green and use <code>display:block;</code> to change it to a block-level element. Now add a left margin of -50px to pull it partly out of the box.
+</ol>
+
+<h2>A Subheading</h2>
+
+<p id="paragraph1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+<p id="paragraph2">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in <strong>dolore deserunt mollit anim</strong>reprehenderit in  dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia  sunt in culpa qui officia deserunt <span class="special">voluptate velit esse cillum</span> mollit anim id est laborum. In reprehenderit in voluptate velit esse cillum  id est laborum. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+
+</div>
+
+
+
+
+<div class="section">
+<h2>Part 2</h2>
+
+
+<ol>
+	<li>Below there are three sets of headings, forms, and submit buttons. First, target all <code>formgroup</code>s and assign padding, margins, and a light background color to separate them from each other.</li>
+	
+<li>The buttons that follow each form are inline elements. To move them below their forms, target them with CSS and assign <code>display:block;</code> </li>
+
+
+<li>The search form below has a giant submit button (which uses an image file). Make it look better by increasing the size of the form to feel more proportional to the button: 
+	<ul>
+	<li>Find the HTML for the the search text input.</li>
+	<li>(a) Target the text input element and set a pixel width to expand its size, (b) increase the font size of the input text (you&#8217;ll have to type it in yourself when testing), and (c) add padding to push the type off the edges.</li>
+	<li>Finally, separate the form from the submit button by 10px, using margins.</li>
+	</ul>
+</li>
+
+<li>Textareas can take background images. In the images folder, there&#8217;s an image called <code>blue-fade.png</code>. Write a rule that assigns it as a background image to the top of <code>textarea1</code> and make it repeat horizontally.</li>
+
+<li>Remember pseudo-classes? We often use CSS like <code>a:hover {color:blue;}</code> to change styles on mouseover. But there are other pseudo-classes besides <code>hover</code>: form fields (inputs and textareas) can take advantage of the <code>:focus</code>, that kicks in when the user puts their cursor in the field. Write a rule that targets <code>textarea2</code> and increases the font size when the user clicks into it.</li>
+
+</ol>
+
+
+<div class="formgroup" id="search">
+<h2>Search Form</h2>
+<p><input id="search-text" name="search-text" type="text" />
+<input id="submit0" type="image" src="images/submit.jpg" alt="Submit" /></p>
+</div>
+
+<div class="formgroup">
+<h2>Text Area 1</h2>
+<p><textarea id="textarea2" name="textarea2" rows="10" cols="60">This is textarea2. In reprehenderit in voluptate velit esse cillum dolore deserunt mollit anim id est laborum. In reprehenderit in voluptate velit esse cillum dolore deserunt mollit anim id est laborum. In reprehenderit in voluptate velit esse cillum dolore deserunt mollit anim id est laborum. In reprehenderit in voluptate velit esse cillum dolore deserunt mollit anim id est laborum.</textarea>
+<input type="submit" id="submit2" name="submit2" value="Submit the form!" /> </p>
+
+</div>
+
+<div class="formgroup">
+<h2>Text Area 2</h2>
+<p><textarea id="textarea1" name="textarea1" rows="4" cols="40">This is textarea1. In reprehenderit in voluptate velit esse cillum dolore deserunt mollit anim id est laborum.</textarea>
+<input type="submit" id="submit1" name="submit1" value="Go!" /> </p>
+
+</div>
+
+
+</div>
+
+
+<div class="section">
+<h2>Part 3</h2>
+
+	<ol>
+	<li>The gallery images below are marked up with an unordered list. To get rid of the bullets (added by the browser by default), target the list and use <code>list-style:none;</code></li>
+	<li>Remember that every HTML tag is either <code>inline</code> or <code>block</code> by default, but you can override the default with CSS. Target all the list items inside the gallery and set them to <code>display:inline</code> (this is often a good alternative to floating).</li>
+	<li>Now target the images inside the gallery: give them a background color of #c3ffcb (green) and 20px of padding to reveal the background color.</li>
+	<li>Every other list item in the gallery have a class of <code>odd</code> assigned to them. Use that class to target the images inside <code>odd</code> images and give them a background color of #c3ebff (blue). Override the left and right padding and increase them to 40px.</li>
+	</ol>
+	
+	
+	<h2>A Gallery of Images</h2>
+		
+	<ul class="gallery">
+	<li><img src="images/nashville.jpg" alt="Nashville" height="100" width="100" /></li>
+	<li class="odd"><img src="images/nashville.jpg" alt="Nashville" height="100" width="100" /></li>
+	<li><img src="images/nashville.jpg" alt="Nashville" height="100" width="100" /></li>
+	<li class="odd"><img src="images/nashville.jpg" alt="Nashville" height="100" width="100" /></li>
+	<li><img src="images/nashville.jpg" alt="Nashville" height="100" width="100" /></li>
+	<li class="odd"><img src="images/nashville.jpg" alt="Nashville" height="100" width="100" /></li>
+	<li><img src="images/nashville.jpg" alt="Nashville" height="100" width="100" /></li>
+	<li class="odd"><img src="images/nashville.jpg" alt="Nashville" height="100" width="100" /></li>
+	<li><img src="images/nashville.jpg" alt="Nashville" height="100" width="100" /></li>
+	<li class="odd"><img src="images/nashville.jpg" alt="Nashville" height="100" width="100" /></li>
+	<li><img src="images/nashville.jpg" alt="Nashville" height="100" width="100" /></li>
+	<li class="odd"><img src="images/nashville.jpg" alt="Nashville" height="100" width="100" /></li>
+	</ul>
+
+</div>
+	
+	
+<p id="footer">&#169; Watkins College of Art and Design.</p>
+
+</div> <!-- end main -->
+
+</div> <!-- end wrap -->
+
+
+
+</body>
+</html>

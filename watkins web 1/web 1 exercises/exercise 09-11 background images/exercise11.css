@@ -1,0 +1,116 @@
+/*Zero browser defaults*/
+body * {margin:0; padding:0; border:none;text-indent:0;text-decoration: none;outline:none;}
+
+/* ------------------------
+	Basic style 
+ ------------------------ */
+body				{font-family:georgia; font-size:15px; line-height:21px; background-color:#e7e7e7; /* light gray*/}
+h1, h2, p, ol, ul	{font-weight:normal;margin-bottom:15px;}
+ol li 				{margin-bottom:10px;}
+a 					{color:#00b4ff; /*blue*/}
+li.current a		{color:black;}
+code				{font-family: courier, monospace; background-color:#fff9cb; /* light yellow 'highlighter'*/ }
+
+
+
+/* ------------------------
+	Layout 
+ ------------------------ */
+
+
+div#wrap {
+	background-color:#fff; /* white*/
+	width: 700px;
+	margin: 0 auto 0 auto;
+	}
+		
+div#main {
+	width: 600px;
+	background-color: #fffee6; /*light yellow*/
+	padding:50px;
+	}
+
+	
+
+/* ------------------------
+	Unordered List with Arrows 
+ ------------------------ */
+
+ul#arrows {
+	margin-bottom:10px;
+	}
+	
+ul#arrows li {
+	padding:0;
+	}
+	
+
+
+/* ------------------------
+	Replace type with an image
+ ------------------------ */
+h2#image-type {
+/*	text-indent:-9999px;*/
+/*	background:transparent url(image-type.png) no-repeat 0 0;*/
+	}
+
+
+
+/* ------------------------
+	Replace 4 navigation links using a single image
+ ------------------------ */
+
+/*
+#image-nav {
+	list-style:none;
+	}
+*/
+
+
+
+/*
+#image-nav li {
+	float:left;
+	width:100px;
+	height:20px;
+	margin-right:10px;
+	}
+*/
+
+
+
+/*
+#image-nav li a  {
+	width:100px;
+	height:20px;
+	display:block;
+	text-indent:-9999px;
+	}
+*/
+
+
+
+/*
+#home, #portfolio, #about, #contact {
+	background: url(image-nav.png) no-repeat 0 0;
+	}
+*/
+
+
+
+/*
+a#home       {background-position:0 0;}
+a#portfolio  {background-position:0 0;}
+a#about      {background-position:0 0;}
+a#contact    {background-position:0 0;}
+
+a#home:hover      {background-position:0 -20px}
+a#portfolio:hover {background-position:0 0;}
+a#about:hover     {background-position:0 0;}
+a#contact:hover   {background-position:0 0;}
+*/
+
+
+
+
+#main p {clear:both;}

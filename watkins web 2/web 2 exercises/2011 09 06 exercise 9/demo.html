@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+<title>Demo</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" /> 
+<link rel="stylesheet" type="text/CSS" href="css/common.css" media="screen" />
+
+
+<style type="text/css">
+
+
+
+/* ------------------------
+	Example 1
+ ------------------------ */
+
+.caps {font-size:90%; letter-spacing:1px;}
+
+/* This *descendent* selector will be inherited all the way down the nesting structure. It targets all text in <em> tags that appears somewhere inside p#words. It doesn't matter whether that <em> text is a child, a grandchild, a great-granchild, etc. -- it will get the rule and be rendered in bold italic. */
+p.words em {font-style:italic; font-weight:bold;}
+
+/* This *child* selector only targets <em> text that is an immediate descendent (aka a child) of p.words. Grandchildren, Great-grandchildren, and other descendents don't get targeted by the rule. */
+p.words > em {color:red;}
+
+
+
+/* ------------------------
+	Example 2
+ ------------------------ */
+/*A more complicated example with multiple elements to create our selectors.
+
+
+This first rule will bold text any <strong> text as long as its a descendent of a list item, which itself must be a descendent of ul#nav: */
+ul#nav li strong {font-weight:bold}
+
+/* This rule looks similar, but it uses child selectors. <strong> text will be colored red, but only if it is an immediate child of a list item, which itself must be a child of ul#nav. This excludes a few of the <strong> text on the page (Print Design, Brochures): they are children of list items but those list items are descendents, not children of ul#nav.  */
+ul#nav > li > strong {color:red;}
+
+
+/* You can also see the ways margins get inherited depending on whether we use a descendent or child selector */
+
+ul#nav li {margin-left:50px;} 
+/*ul#nav > li {margin-left:50px;} */
+
+
+</style>
+
+</head>
+
+
+<body>
+	
+
+<h2>Example 1</h2>
+<p class="words">What? He works for the<span class="caps"> <em>CIA</em></span>?!?.</p>
+<p class="words">Yes, I just told you: <strong>He <em>works for the <span class="caps">CIA</span></em>.</strong></p>
+<p class="words"><span class="caps">OMG</span>, he works for the <em>Cental Intelligence Agency</em>!<br /></p>
+
+	
+	<hr /> <!-- horizontal rule -->
+
+<h2>Example 2</h2>
+	
+<ul id="nav">
+	<li>Home</li>
+	<li><strong>Portfolio</strong>
+		<ul class="sub">
+			<li>Web Design</li>
+			<li><strong>Print Design</strong>
+				<ul>
+					<li><strong>Brochures</strong></li>
+					<li>Logos</li>
+					<li>Annual Reports</li>
+				</ul>
+			</li>
+			<li>Illustration</li>
+		</ul>
+	</li>
+	<li>About</li>
+
+</ul> <!-- /nav -->
+			
+			
+
+
+</body>
+</html>

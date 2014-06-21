@@ -1,0 +1,90 @@
+/* Part 1 */
+
+.imagecap {
+	color:#888;
+	font-family:arial, sans-serif; 
+	font-size:9px;
+	text-transform:uppercase; 
+	letter-spacing:1px;
+	}
+
+
+.left {
+	float:left; 
+	padding:0px 15px 0 0;
+	}
+.right {
+	float:right; 
+	padding:0px 0 0 15px;
+	}
+
+
+
+
+/* Part 2 */
+
+ul#gallery {
+	list-style:none; 
+	float:left; /* float the container */
+	background-color:#bbf6ff; /* blue */ 
+	padding:15px;
+	}
+
+ul#gallery li {
+	float:left;
+	margin: 0 5px 5px 0;
+	width:200px;
+	height:200px;
+	font-family:arial, sans-serif; 
+	font-size:9px;
+	line-height:12px;
+	text-transform:uppercase; 
+	letter-spacing:1px;
+	}
+
+
+
+
+/* Part 3 */
+
+#contact-form {
+	padding:10px;
+	background-color: #eaeaea;
+	}
+
+#contact-form div {
+	float:left;
+	border-bottom:1px solid #fff;
+	padding:10px 0;
+	}
+
+#contact-form label {
+	float:left; 
+	width:100px; 
+	font-weight:bold; 
+	font-family: arial, sans-serif; 
+	font-size:11px; 
+	text-align:right; 
+	padding-right:10px;
+	}
+
+#contact-form div input, 
+#contact-form div textarea {
+	float:right;
+	width:500px;
+	border:0;
+	padding:5px;
+	color:#444;
+	}
+
+#contact-form div input:focus, 
+#contact-form div textarea:focus {
+	color:#000;
+	}
+
+#contact-form div input.required:focus {
+	border:1px solid blue; padding:4px;
+	}
+#contact-form #contact-submit {
+	margin:10px 0 0 110px;
+	}

@@ -1,0 +1,694 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+
+
+<title>Watkins Web 1</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Language" content="en-us" />
+<meta name="robots" content="all" />
+<meta name="author" content="Watkins College, James Muspratt" />
+<meta name="description" content="Watkins Web 1 Class Blog" />
+<meta name="keywords" content="Watkins College, Web Design, Class" />
+<meta http-equiv="imagetoolbar" content="no" />
+
+<!-- RSS -->
+<link rel="alternate" type="application/rss+xml" 
+title="RSS" href="http://web1.jamesmuspratt.com/rss/" />
+
+<!-- CSS -->
+<link rel="stylesheet" type="text/css" 
+href="http://web1.jamesmuspratt.com/css/reset.css" media="screen" />
+
+<link rel="stylesheet" type="text/css" 
+href="layout.css" media="screen" />
+<link rel="stylesheet" type="text/css" 
+href="type.css" media="screen" />
+<link rel="stylesheet" type="text/css" 
+href="nav.css" media="screen" />
+</head>
+
+<body id="blog">
+
+<div id="top">
+
+<h1 id="logo">Watkins Web 1 Course Blog</h1>
+
+<ul id="nav">
+<li><a class="current" href="http://web1.jamesmuspratt.com/">home</a></li>
+<li>
+<a href="http://web1.jamesmuspratt.com/tags/admin/" class="tagSizeMedium tagSize6" style="font-size: 100%;">admin</a></li>
+<li>
+<a href="http://web1.jamesmuspratt.com/tags/exercises/" class="tagSizeMedium tagSize2" style="font-size: 100%;">exercises</a></li>
+<li>
+<a href="http://web1.jamesmuspratt.com/tags/inspiration/" class="tagSizeSmallest tagSize1" style="font-size: 100%;">inspiration</a></li>
+<li>
+<a href="http://web1.jamesmuspratt.com/tags/projects/" class="tagSizeSmallest tagSize1" style="font-size: 100%;">projects</a></li>
+<li>
+<a href="http://web1.jamesmuspratt.com/tags/reading/" class="tagSizeMedium tagSize6" style="font-size: 100%;">reading</a></li>
+<li>
+<a href="http://web1.jamesmuspratt.com/tags/resources/" class="tagSizeLargest tagSize9" style="font-size: 100%;">resources</a></li>
+<li>
+<a href="http://web1.jamesmuspratt.com/tags/show-and-tell/" class="tagSizeMedium tagSize5" style="font-size: 100%;">show and tell</a></li>
+<li>
+<a href="http://web1.jamesmuspratt.com/tags/slides/" class="tagSizeMedium tagSize4" style="font-size: 100%;">slides</a>
+</li>
+<li><a href="http://web1.jamesmuspratt.com/archive/">complete archive</a></li>
+
+</ul>
+
+<div id="search-form">
+<form action="http://web1.jamesmuspratt.com/search/" method="get">
+<div>
+<input id="search-input" type="text" name="q" size="12" />
+<input class="searchbutton" type="submit" value="Search" />
+</div>
+</form>
+</div> <!-- end search-form -->
+
+
+
+
+
+<div id="content">
+
+<div class="post">
+
+<h4>James Muspratt | 02/13/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/browser-tools-for-web-developers">Browser Tools for Web&#160;Developers</a></h3>
+
+<p>Here are links to the browser tools I&#8217;ve mentioned in a few classes:</p>
+
+<ul>
+<li>Safari has a dedicated Developer menu that you can turn on. Go to Safari &gt; Preferences &gt; Advanced and check &#8220;Show Develop menu in menu bar&#8221;. Now you can use the Develop menu to turn stylesheets off, show the Web Inspector, etc. You can also right-click a particular element on a web page and choose &#8220;Inspect This&#8221; to see that area of code and the styles that are being applied to it. (This  &#8220;Web Inspector&#8221; is active by default in Chrome). </li>
+<li>The excellent <a href="http://chrispederick.com/work/web-developer/">Web Developer Toolbar</a> does similar tricks and more, allowing you to outline elements, view a page&#8217;s <span class="caps">CSS</span>, etc. It&#8217;s available for Firefox and Chrome and gets installed as an extra toolbar &#8212; in Firefox it&#8217;s a big toolbar with icons, but with Chrome it&#8217;s a subtle Gear icon off to the right of your address bar.</li>
+</ul>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/resources/" rel="tag">resources</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 02/12/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/css-selector-cheat-sheet">CSS Selector Cheat&#160;Sheet</a></h3>
+
+<p>Hi everyone, just thought this cheat sheet might help as you continue to refine your first project. These are what I see as the most common kinds of CSS selectors that you need for your pages:</p>
+
+<table>
+	<tr>
+		<th>What we want to style</th>
+		<th><span class="caps"><span class="caps">HTML</span></span></th>
+		<th><span class="caps"><span class="caps">CSS</span></span> Rule</th>
+	</tr>
+	<tr>
+		<td>&#8220;All paragraphs&#8221;</td>
+		<td><code>&#60;p&#62;Sample&#60;/p&#62;</code></td>
+		<td><code>p {color:red;}</code></td>
+	</tr>
+	<tr>
+		<td>&#8220;All paragraphs with a class of <em>special</em>&#8221;</td>
+		<td><code>&#60;p class=&#34;special&#34;&#62;Sample&#60;/p&#62;</code></td>
+		<td><code>p.special {color:red;}</code></td>
+	</tr>
+	<tr>
+		<td>&#8220;The (only) paragraph with an id of <em>first</em>&#8221;</td>
+		<td><code>&#60;p id=&#34;first&#34;&#62;Sample&#60;/p&#62;</code></td>
+		<td><code>p#first {color:red;}</code></td>
+	</tr>
+	<tr>
+		<td>&#8220;Anything with a class of <em>warning</em>&#8221;</td>
+		<td><code>&#60;p class=&#34;warning&#34;&#62;Sample&#60;/p&#62;, but also &#60;ul class=&#34;warning&#34;&#62;, &#60;div class=&#34;warning&#34;&#62;, etc.</code></td>
+		<td><code>.warning {color:red;}</code></td>
+	</tr>
+	<tr>
+		<td>&#8220;Paragraphs in the <em>maincontent</em> div&#8221;</td>
+		<td><code>&#60;div id=&#34;maincontent&#34;&#62;&#60;p&#62;Sample&#60;/p&#62;&#60;/div&#62;</code></td>
+		<td><code>div#maincontent p {color:red;}</code></td>
+	</tr>
+	<tr>
+		<td>&#8220;List items in <em>ingredients</em> unordered lists&#8221;</td>
+		<td><code>&#60;ul class=&#34;ingredients&#34;&#62;&#60;li&#62;Sample&#60;/li&#62;&#60;/ul&#62;</code></td>
+		<td><code>ul.ingredients li {color:red;}</code></td>
+	</tr>
+</table>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/resources/" rel="tag">resources</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 02/09/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/project-1-final-details">Project 1 Final&#160;Details</a></h3>
+
+<p>Hi everyone, here are some details about Project 1.</p>
+
+<h2>Submitting and Archiving</h2>
+
+<ul>
+<li><em>Both</em> parts of Project 1 are due on <em>February 16</em>, in class. I will pass around a flash drive and have you copy your files onto it. Please make sure you have your final files at the beginning of class: I recommend bringing them in on a drive and having backup copies in your email or on the server, just in case. </li>
+<li>Unless you have (reasonable) objections, I will be posting your projects to the website so the class can view and learn from them. </li>
+<li>To help with that process, please name your files as follows: Create two folders, one called lastname-project1a and the other lastname-project1b. Inside each, put files called index.html and style.css. Don&#8217;t forget to update the <code>&lt;link&gt;</code> tag in your <span class="caps"><span class="caps">HTML</span></span> to refer to the new name of the <span class="caps"><span class="caps">CSS</span></span> file.</li>
+</ul>
+
+<h2>Criteria for Grading</h2>
+
+<p>Remember that this project is <em>both</em> about writing valid, semantic code and employing compelling, refined, or inventive typography. As you get closer to finalizing your projects, please take into account the critiques you heard from the class in the past two weeks: in some cases this is a matter of small tweaks to spacing or fonts, with others it&#8217;s a matter of making bigger choices about what your design is trying to accomplish.</p>
+
+<p>In no particular order, here are the core questions I&#8217;ll be asking: </p>
+
+<ul>
+<li>Does the <span class="caps"><span class="caps">HTML</span></span> and <span class="caps"><span class="caps">CSS</span></span> <a href="http://validator.w3.org">validate</a>? If not, is there a clear reason why not?</li>
+<li>Is the mark-up written to be semantic and structural, rather than presentational? </li>
+<li>Has basic care been taken to proofread the text for transcription errors, extra spaces, etc.?</li>
+<li>Have proper <span class="caps"><span class="caps">HTML</span></span> entities been used for non-<span class="caps"><span class="caps">ASCII</span></span> typographic characters like curly quotation marks, apostrophes, dashes, ellipses, fractions, etc.?</li>
+<li>If appropriate to the design, have typographic &#8220;finer points&#8221; been observed? Do the quotation marks hang, do drop-caps line up with their baseline, have small caps been used?</li>
+<li>Does the typography retain its legibility and character if the text is resized up or down a level? </li>
+<li>Does the typography &#8212; not just choice of typeface, but also the measure, leading, type sizes, arrangement, and color &#8212; convey a thoughtful idea about, or approach to, the particular text? In other words, do the whole set of typographic &#8220;moves&#8221; add up to a coherent design?</li>
+</ul>
+
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 02/09/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/feb-9-class-canceled">Feb 9 class&#160;canceled</a></h3>
+
+<p>Hi everyone, class is canceled tonight due to weather. See you Monday!</p>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/admin/" rel="tag">admin</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 02/08/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/show-and-tell-full-schedule">Show and Tell Full&#160;Schedule</a></h3>
+
+<p>Here is the schedule for show and tell for the rest of the semester:</p>
+
+<table>
+<tr>
+<td>1 19</td>
+<td>&#8212;</td>
+</tr>
+<tr>
+<td>1 24</td>
+<td>&#8212;</td>
+</tr>
+<tr>
+<td>1 26</td>
+<td>aaron</td>
+</tr>
+<tr>
+<td>1 31</td>
+<td>katelyn, don</td>
+</tr>
+<tr>
+<td>2 02</td>
+<td>xavier</td>
+</tr>
+<tr>
+<td>2 07</td>
+<td>rex, courtney</td>
+</tr>
+<tr>
+<td>2 09</td>
+<td>jill</td>
+</tr>
+<tr>
+<td>2 14</td>
+<td>adam a</td>
+</tr>
+<tr>
+<td>2 16</td>
+<td>eric</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>2 21</td>
+<td>richard</td>
+</tr>
+<tr>
+<td>2 23</td>
+<td>mark</td>
+</tr>
+<tr>
+<td>2 28</td>
+<td>kelsey</td>
+</tr>
+<tr>
+<td>3 02</td>
+<td>steve</td>
+</tr>
+<tr>
+<td>3 07</td>
+<td>adam f</td>
+</tr>
+<tr>
+<td>3 09</td>
+<td>katelyn</td>
+</tr>
+<tr>
+<td>3 14</td>
+<td>(break)</td>
+</tr>
+<tr>
+<td>3 16</td>
+<td>(break)</td>
+</tr>
+<tr>
+<td>3 21</td>
+<td>(critiques)</td>
+</tr>
+<tr>
+<td>3 23</td>
+<td>(critique)</td>
+</tr>
+<tr>
+<td>3 28</td>
+<td>aaron</td>
+</tr>
+<tr>
+<td>3 30</td>
+<td>don</td>
+</tr>
+</table>
+
+<table>
+<tr>
+<td>4 4</td>
+<td>xavier, jill</td>
+</tr>
+<tr>
+<td>4 6</td>
+<td>rex, courtney</td>
+</tr>
+<tr>
+<td>4 11</td>
+<td>adam a,</td>
+</tr>
+<tr>
+<td>4 13</td>
+<td>eric, richard</td>
+</tr>
+<tr>
+<td>4 18</td>
+<td>mark2, kelsey</td>
+</tr>
+<tr>
+<td>4 20</td>
+<td>steve, adam f</td>
+</tr>
+<tr>
+<td>4 25</td>
+<td>(critique)</td>
+</tr>
+<tr>
+<td>4 27</td>
+<td>(critique)</td>
+</tr>
+<tr>
+<td>5 02</td>
+<td>&#8212;</td>
+</tr>
+<tr>
+<td>5 04</td>
+<td>&#8212;</td>
+</tr>
+</table>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/admin/" rel="tag">admin</a> / 
+<a href="http://web1.jamesmuspratt.com/tags/show-and-tell/" rel="tag">show and tell</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>Don Mann | 02/08/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/don-s-show-and-tell">Don&#39;s show and&#160;tell</a></h3>
+
+<img src="http://web1.jamesmuspratt.com/images/16.png" width="800" height="450" />
+
+<img src="http://web1.jamesmuspratt.com/images/17.png" width="800" height="450" />
+
+<img src="http://web1.jamesmuspratt.com/images/18.png" width="800" height="450" />
+
+<p>
+ This website, I think is really good, I like how the designer of the website molded it to Storm Thorgerson style. Each of the tabs for different pages has radial movements if you place the mouse on them, I think that's impressive since I can't do that. To me, I think the website is somewhat simple to navigate and I think it's clever that each piece of work has an eye on the lower right side, if you click on it it tells you info on how the work was made. <p/>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/show-and-tell/" rel="tag">show and tell</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 02/07/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/reading-for-february-9">Reading for February 9</a></h3>
+
+<p>Hi all, please read the following for Thursday:</p>
+
+<ul>
+<li><a href="http://www.brainjar.com/css/positioning/">BrainJar on CSS Positioning</a> (just the first page)</li>
+<li><a href="http://css-tricks.com/the-css-box-model/">The CSS Box Model</a></li>
+</ul>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/reading/" rel="tag">reading</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 02/07/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/the-css-box-model">The CSS Box&#160;Model</a></h3>
+
+<p>Here are tonight&#8217;s slides on the <a href="/file_download/10/2011+02+07+web+1+css+box+model.pdf">CSS Box Model</a>.</p>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/slides/" rel="tag">slides</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 02/06/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/critique-for-group-b-on-monday">Critique for Group B on&#160;Monday</a></h3>
+
+<p>Just a reminder, if you are in Group B, we will be reviewing your first project tomorrow night (Feb 7). </p>
+
+<dl>
+<dt>Group B (updated)</dt>
+
+<dd>Adam Filer         </dd>
+<dd>Don Mann         </dd>
+<dd>Xavier Payne     </dd>
+<dd>Rex Runyeon      </dd>
+<dd>Courtney Spencer </dd>
+<dd>Jill Thompson    </dd>
+<dd>Kelsey Ullrich   </dd>
+<dd>Steve Womack	 </dd>
+</dl>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/admin/" rel="tag">admin</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 02/04/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/reading-for-february-7">Reading for February 7</a></h3>
+
+<p>Here is the assignment for Monday, February 7:</p>
+
+<ul>
+<li>Read Zeldman, Ch. 10.</li>
+<li>Continue working on both parts of Project 1</li> 
+<li>If you are in <em>Group B</em>, get your prose text to the point that you can present it and get feedback from the group.  <em>Think of questions you want to ask the group</em>, whether they relate to design or code or both.</li>
+
+</ul>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/reading/" rel="tag">reading</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 02/04/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/stories-within-stories">Stories within&#160;Stories</a></h3>
+
+<p><img src="http://web1.jamesmuspratt.com/images/14.jpg" width="450" height="303" alt="Cut Book" /></p>
+
+<p>On Wednesday, Adam's treatment of Kafka's Metamorphosis brought up the idea of creating new stories within books through typography. This is the book project I mentioned in class. Jonathan Safran Foer (better-known as a novel-writer) collaborated with designer <a href="http://www.saradebondt.com/">Sara de Bondt</a> to create <em>Tree of Codes</em>, a new work made entirely from the book <em>Street of Crocodiles</em>.</p>
+
+<p><a href="http://www.good.is/post/good-design-daily-jonathan-safran-foer-die-cuts-one-book-into-another/">Read Good Magazine's post about the project</a>.</p>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/inspiration/" rel="tag">inspiration</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>Katelyn Joughin | 02/03/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/my-three-website-s">My Three Website&#39;s</a></h3>
+
+<img src="http://web1.jamesmuspratt.com/images/8.png" width="800" height="450" />
+
+<img src="http://web1.jamesmuspratt.com/images/9.png" width="800" height="450" />
+
+<p>
+This first website is <a href="http://www.muse.com/">Muse</a>. I am not sure what this website is about but this site was stumbled upon and it was so strange and different that I had to show you guys. Something I didn&#8217;t like about it was that you could only click on the hand to naviate and there was no real understanding of what was going on.
+</p>
+
+<img src="http://web1.jamesmuspratt.com/images/10.png" width="800" height="450" />
+
+
+<img src="http://web1.jamesmuspratt.com/images/11.png" width="800" height="450" />
+
+<p>
+This second website <a href="http://thesum.ca/work.html">The Sum</a> was my favorite! This is an online portfolio and freelance company. I love the whole design and the navigation. It was so clean and clear. One thing I really liked that I have not seen before was their logo moved down the page as you scrolled down the page. It was always on the left side floating and never covered anything up. I thought it was really unique. I also liked that everything was black and white except their own work which was displayed in color.
+</p>
+
+
+<img src="http://web1.jamesmuspratt.com/images/12.png" width="800" height="450" />
+
+
+<img src="http://web1.jamesmuspratt.com/images/13.png" width="800" height="450" />
+
+<p>
+This last website <a href="http://www.morgenthaufilm.com/">Morgen Thau Film</a>. It was a movie website featuring this interactive timeline of events that were in the movie. I also loved the loading screen. Since it was a flash website it took some time for the site to load. While it was loading, it was not your average loading bar, it was a sentance and had sayings that kept your interest. This site amazed me from the beginning.
+</p>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/show-and-tell/" rel="tag">show and tell</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 02/03/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/typography-resources">Typography&#160;Resources</a></h3>
+
+<ul>
+<li><a href="http://www.slideshare.net/jeff_croft/elegant-web-typography-presentation"><em>Elegant Web Typography</em>, a presentation by Jeff Croft</a></li>
+<li><a href="http://webtypography.net/toc/">The Elements of Typographic Style Applied to the Web</a>, Richard Rutter&#8217;s ongoing collection of Bringhurst rules</li>
+<li><a href="http://simplebits.com/notebook/2008/08/14/ampersands-2/">Use the Best Available Ampersand</a>, a blog post by Dan Cederholm</li> 
+</ul>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/resources/" rel="tag">resources</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 01/31/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/html-and-css-references">HTML and CSS&#160;References</a></h3>
+
+<p>A few of you were asking if there is a single list somewhere of common <span class="caps">CSS</span> properties and <span class="caps">HTML</span> tags. Here is what I found:</p> 
+
+<h2><span class="caps">HTML</span></h2>
+<ul>
+<li><a href="http://htmldog.com/reference/htmltags/"><span class="caps">HTML</span> Dog: <span class="caps">HTML</span> Tags</a>, nicely categorized</li> 
+</ul>
+
+<h2><span class="caps">CSS</span></h2>
+<ul>
+<li><a href="http://htmldog.com/reference/cssproperties/"><span class="caps">HTML</span> Dog: <span class="caps">CSS</span> Properties</a>, also nicely categorized</li>
+<li><a href="http://www.w3schools.com/css/css_reference.asp">An alphabetical list of <span class="caps">CSS</span> properties from W3Schools</a></li>
+<li><a href="http://culturedcode.com/css/reference.html">Nice hierarchical/interactive list of properties from Cultured Code</a></li>
+</ul>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/resources/" rel="tag">resources</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 01/31/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/critique-wednesday">Critique&#160;Wednesday</a></h3>
+
+<p>Please remember we will be doing a mid-project critique of the work of <em>Group A</em> on Wednesday. Bring in the current state of both texts and be prepared to describe your intentions for the design, as well as questions you have for the group.</p>
+
+<dl>
+
+<dt>Group A</dt>
+<dd>Adam Agee          </dd>
+<dd>Eric Andre         </dd>
+<dd>Richard Cook       </dd>
+<dd>Mark Fentriss      </dd>
+<dd>Adam Filer         </dd>
+<dd>Karissa Goff       </dd>
+<dd>Aaron Johnson      </dd>
+<dd>Katelyn Joughin    </dd>
+
+<dt>Group B</dt>
+
+<dd>Don Mann         </dd>
+<dd>Xavier Payne     </dd>
+<dd>Rex Runyeon      </dd>
+<dd>Courtney Spencer </dd>
+<dd>Jill Thompson    </dd>
+<dd>Kelsey Ullrich   </dd>
+<dd>Steve Womack	 </dd>
+</dl>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/admin/" rel="tag">admin</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 01/31/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/web-typography">Web&#160;Typography</a></h3>
+
+<p>Here are the <a href="/file_download/9/2011+01+29+web+1+web+typography.pdf">Web Typography Slides</a> from tonight. I guess the URLs of the sites (below each screenshot) are only clickable if you open the <span class="caps">PDF</span> using a recent version of Preview for Mac (not Acrobat).</p>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/slides/" rel="tag">slides</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>Steve Womack | 01/31/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/a-good-resource-tutorial">A Good Resource &&#160;Tutorial</a></h3>
+
+<p>I was googling around trying to get some specifics on certain CSS terms and syntax and found a great tutorial site. I found it very useful.</p>
+
+
+<p><a href="http://www.w3schools.com">Hit This Link</a></p>
+
+<p>Steve<p>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/resources/" rel="tag">resources</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 01/31/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/css-reset">CSS&#160;Reset</a></h3>
+
+<p>It is almost always a good idea to put a <span class="caps">CSS</span> reset at the top of your stylesheet. This clears all of the default spacing and style values that a browser would normally add, and means the rules you right will get the expected results more often. </p>
+
+<code><pre>
+
+/* Reset the browser defaults on everything */
+body * {margin:0; padding:0; border:none;text-indent:0;text-decoration: none;outline:none;}
+
+</pre>
+</code>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/resources/" rel="tag">resources</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>Aaron Johnson | 01/28/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/website-show-and-tell-wwwsonnytcom">Website show and tell; www.sonnyt.com</a></h3>
+
+<h1>Online Portfolio of Sonny Tulyaganov</h1>
+
+
+<img src="http://web1.jamesmuspratt.com/images/5.png" width="800" height="450" />
+
+<img src="http://web1.jamesmuspratt.com/images/6.png" width="800" height="450" />
+
+<img src="http://web1.jamesmuspratt.com/images/7.png" width="800" height="450" />
+
+<style>
+<!--
+p { text-indent : 10px; }
+-->
+</style>
+
+
+<p>I found this site interesting because it accomplishes many of the same effects as a flash site, yet uses no flash at all. The buttons animate when clicked and bring up an interface that lets you scroll down through his portfolio. All the animations have a delay on them, which is neat at first but gets tedious when navigating through the different pages. It's just a simple portfolio site and there are only three main pages though so perhaps it isn't meant to be viewed more than once.</p>
+
+<p>The layout is interesting and minimalistic, which is typical of many modern portfolio sites. It utilizes a continuous long page that you scroll down to display his portfolio pieces, which cuts down on the amount of clicking and simplifies navigation. Interesting to note is that he seems to have embedded his blog into the site as well. Perhaps this utilizes RSS in some way to recreate the blog, rather than making an actual portal to another site.</p>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/show-and-tell/" rel="tag">show and tell</a></p>
+
+
+</div> <!-- /post -->
+
+<div class="post">
+
+<h4>James Muspratt | 01/27/11</h4>
+<h3><a href="http://web1.jamesmuspratt.com/posts/show-and-tell-schedule">Show and tell&#160;schedule</a></h3>
+
+Here is the schedule for the next few weeks for show and tell:
+
+<ul>
+<li>Jan 31: Katelyn, Don</li>
+<li>Feb 2: Xavier</li>
+<li>Feb 7: Rex, Courtney</li>
+<li>Feb 9: Jill</li>
+
+</ul>
+
+
+<p class="post-tags">Tags: <a href="http://web1.jamesmuspratt.com/tags/show-and-tell/" rel="tag">show and tell</a></p>
+
+
+</div> <!-- /post -->
+
+
+
+
+<ul id="section-nav">
+<li class="older"><a href="http://web1.jamesmuspratt.com/?pg=2">← Previous five posts</a></li>
+<li class="newer"> </li>
+</ul> <!-- /section-nav -->
+
+</div> <!-- /content -->
+
+<div class="clear"></div>
+
+<div id="footer"><p>All posts are copyright 2011 of the individual author. Validate this page&#8217;s <a href="http://validator.w3.org/check/referer"><span class="caps">HTML</span></a> and <a href="http://jigsaw.w3.org/css-validator/check/referer"><span class="caps">CSS</span></a>. Subscribe via the <a href="http://web1.jamesmuspratt.com/rss/">RSS feed</a>.  <a href="http://web1.jamesmuspratt.com/textpattern/">System login</a>.</p></div>
+
+
+
+</div> <!-- /top -->
+
+</body>
+</html>

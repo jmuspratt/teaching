@@ -1,0 +1,94 @@
+/* ------------------------
+	Reset the browser defaults
+ ------------------------ */
+body * {margin:0; padding:0; text-indent:0; text-decoration:none; outline:none; border:0;}
+
+
+/* ------------------------
+	Layout
+ ------------------------ */
+
+body  {
+	font-family:georgia, serif;
+	font-size:14px;
+	line-height:21px;
+	background-color:#eaeaea; /* light gray*/
+	}
+
+nav ul {list-style:none;}
+
+
+
+div#container {
+	width: 750px;
+	margin:20px auto; /* put 20px margin above/below and center horizontally */
+	}
+
+div#main {
+	padding:50px;
+	background-color: white; 
+	}
+
+/* ------------------------
+	Layout
+ ------------------------ */
+
+
+
+/* ------------------------
+	Type Styles
+ ------------------------ */
+a 	{color:#0675a4; /*blue*/ }
+a:hover {color:#2ec0fe;}
+
+nav li.current a {color:black;}
+
+p {margin-bottom:10px;}
+
+
+p.download {font-size:11px;}
+
+.caps {font-size:90%; letter-spacing:1px;}
+
+h1, h2, h3, h4 {
+	font-weight:normal; /* unbold headings */
+	clear:both;
+	}
+
+h1 {
+	margin:0 0 10px 0;
+	font-size:24px;
+	}
+
+h2 {
+	font-size:13px;
+	text-transform:uppercase;
+	letter-spacing:1px; 
+	margin:20px 0 0 0;
+	}
+
+h3 {
+	margin:0 0 10px 0;
+	}
+
+h4 {
+	font-size:14px;
+	}
+ul, ol {margin:10px 0;}
+
+ul {list-style:circle;}
+
+code {
+	background-color:#FFFBE0; /* 'highlight' code samples */
+	font-family:monospace;
+	}
+	
+section {
+	padding:20px 0;
+	clear:both;
+	float:left;
+	width:650px;
+	border-bottom:1px solid #eaeaea;
+	}
+
+footer {clear:both;padding-top:10px;}

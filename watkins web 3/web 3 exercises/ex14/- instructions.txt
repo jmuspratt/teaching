@@ -1,0 +1,35 @@
+Part 1
+-------
+
+Open config.php and replace the MYSQL username and password strings on lines 4 and 5 with your account information. Leave everything else the same. Save and close config.php. Upload all the files to a folder on your site and load the page (e.g. http://jschmoe.watkinswebdev.com/ex14/). Now open index.php and read through the code to see how everything gets retrieved, looped through, and output to the page. You should see contributions Romney's
+
+	(a) The SQL query in line 38 controls not only what database rows get retrieved, but also how they are sorted when they get stored in our PHP variable. Try changing the ORDER BY paramater from the contributor's zip code to the contributor's city. Remember, you need to refer to that attribute by its MYSQL column name.
+	
+	(b) On line 37, try changing 'romney' to 'obama.' Upload the file and reload the page to see the new data.
+	
+	(c) Lets reduce the info being output for each contribution. in <p class="contribution">, get rid of everything except contributor name and contribution amount. The output syntax should look like <p class="contribution">SCHMOE, JOE ($500)</p>
+	
+	(d) Lets add classes dynamically based on the contribution amount. Use "if" conditions to test the $contribution_amount. If the amount is over $50, the <p> should get a class of "c50" in addition to "contribution." If it's over $100, it should get "c100" instead. Create conditions for 50, 100, 500, 1000, 1500, and 2500 to correspond with the styles at the bottom of style.css. Each output paragraph should then look something like <p class="contribution c100">SCHMOE, JOE ($150)</p>, and your page should color the paragraphs from yellow to red, accordingly.
+	
+	(e) To make the display more compact, change the <p> tag to a <span> (don't forget to change the closing tag). 
+	
+	(f) Now change the SQL statement to sort by contribution amount. You should get a nice color gradient. 
+	
+Part 2
+-------
+
+This page is similar to Part 1, but it puts the MySQL data retrieval and looping into a function called show_contributions(). It also adds a form at the top of the page which lets the user filter the contributions by city/town. We do this by submitting our form back to the same page (using action="#"), then in the page testing to see if the special $_GET['term'] variable exists, which tells us whether the user has submitted the form or has just loaded index2.php. If the form has been submitted, we use a more specific SQL query, one that only retrieves rows from the databas where the city name matches the users $search.
+	 
+	 (a) By default this page displays both romney and obama, putting one div after the other. Lets modify style.css so we can view both at once: use the "romney" and "obama" classes to put the two candidates into side-by-side columns using opposing floats. Set the width of each column to be 47% of the container, so you leave a 6% gap between them.
+	 
+	 (b) Try changing your <span> back to <p>s. Which version is more accurate form an information-design standpoint? Which is more legible/understandable?
+	 
+	 (c) Add radio buttons to the <form> that lets the user decide whether to sort by contribution amount or by city name. Use the following HTML code in the form:
+	 
+  <br /><input type="radio" name="sort" id="sort-amount" value="amount" checked><label for="sort-amount">Sort by Contribution Amount</label>
+		<input type="radio" name="sort" id="sort-occupation" value="occupation"><label for="sort-occupation">Sort by Contributor&#8217;s Occupation</label>
+
+		
+		.. and add PHP logic to alter the SQL query as necessary.
+
+	 

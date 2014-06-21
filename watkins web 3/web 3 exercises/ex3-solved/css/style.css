@@ -1,0 +1,42 @@
+/* Reset */
+	body, body * 	{margin:0; padding:0; text-indent:0; text-decoration: none; outline:none; }
+
+/*	guide */
+	body {background: transparent url(guide.jpg) repeat-y 50% 0; }
+
+/*	type and other basic styles */
+	body 	{font-family:"Helvetica Neue", helvetica, arial; font-size:14px; line-height:20px;}
+	h1 		{font-size:30px; line-height:30px; color:black;}
+	h2 		{font-size:14px;}
+	p, ul	{margin-bottom:10px;}
+	a 		{color:#00a8ff;font-weight:bold;}
+	li.current a {color:black;}
+	em 			{background-color:yellow; font-style:normal;}
+	#main ul 	{margin-left:20px;}
+	header 		{margin-top:5px; }
+
+/*	Your styles go below here*/
+
+/*	use the wrap div to center a fixed-width container	*/
+	#wrap {width:640px; margin:0 auto; }
+	
+/*	masthead and nav	*/
+	h1 {width: 200px; float:left;}
+	nav {width: 420px; float:right; padding-top:10px; }
+	nav li {display:inline-block; margin-right:10px;}
+	
+/*	layout */
+	section#image 	{margin:10px 0 20px 0;}
+	#sidebar  		{font-size:11px; line-height:15px; color:gray; }	
+	img {display:block;}
+	footer {clear:both; font-size:11px; border-top:1px solid #eaeaea; padding-top:10px;}
+	
+	
+/*	Page-specific styles*/	
+	#floats #sidebar 	{float:left; width:200px; }
+	#floats  #main 		{float:right; width:420px;}
+
+	#positioning #text 		{position:relative;}
+	#positioning #main 		{position:absolute; left:220px; top:0;}
+	#positioning #sidebar 	{margin-left:0px; width:200px; min-height:430px;}
+	

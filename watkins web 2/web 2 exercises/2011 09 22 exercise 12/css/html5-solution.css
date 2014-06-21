@@ -1,0 +1,50 @@
+/* ------------------------
+	Reset the browser defaults
+ ------------------------ */
+body * {margin:0; padding:0; text-indent:0; text-decoration:none; outline:none;}
+
+
+/* ------------------------
+	Primary styles
+ ------------------------ */
+
+div#container {
+	width: 750px;
+	margin:20px auto; /* put 20px margin above/below and center horizontally */
+	background-color:#fff;
+	padding:20px;
+	}
+
+header {
+	background-color:#eaeaea;
+	padding:10px;
+	}
+
+nav ul {list-style:none;}
+
+section {
+	padding:20px 0;
+	clear:both;
+	float:left;
+	width:650px;
+	border-bottom:1px solid #eaeaea;
+	}
+
+article {
+	border:1px dotted gray; 
+	margin-top:10px;
+	padding:20px;
+	}
+
+
+div.post-body {
+	margin-top:10px;
+	border-top:1px solid #eaeaea;
+	background-color:#fffec3;
+	}
+
+footer {clear:both;padding-top:10px;}
+
+
+
+
